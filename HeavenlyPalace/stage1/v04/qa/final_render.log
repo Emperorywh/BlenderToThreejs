@@ -1,0 +1,15 @@
+00:01.750  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v03.blend"
+Info: Saved as "HeavenlyPalace_Whitebox_v04.blend"
+V04_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v04.blend
+01:38.156  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\renders\04_interior.png'
+V04_RENDER 04_interior
+01:58.609  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\renders\01_oblique.png'
+V04_RENDER 01_oblique
+02:32.797  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\renders\02_front.png'
+V04_RENDER 02_front
+03:11.641  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\renders\03_aerial.png'
+V04_RENDER 03_aerial
+V04_REVISION_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

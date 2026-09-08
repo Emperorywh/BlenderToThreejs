@@ -1,0 +1,7 @@
+00:01.750  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\qa\v04_working.blend"
+00:02.000  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v03.blend"
+00:02.266  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v04\qa\v04_working.blend"
+{"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v04\\qa\\v04_working.blend", "unit_system": "METRIC", "meters_per_unit": 1.0, "eye_height_measured_m": 1.6500015258789062, "camera_lens_mm": 35.0, "moon_top_z": 78.0, "moon_floor_z": 36.0, "moon_clear_height_m": 42.0, "sightline_samples": 1242, "blocked_samples": [], "projected_opening_bounds": {"x": [0.2804349958896637, 0.7195649743080139], "y": [0.14738206565380096, 0.6952347755432129]}, "mountain_max_z": 153.28407287597656, "retained_mesh_count": 865, "changed_retained_meshes": [], "axis_missing_floor": [], "axis_rock_intrusions": [], "cameras": [{"frame": 1, "name": "CAM_01_整体斜视_55mm", "position": [860.0, -1280.0, 820.0], "lens_mm": 55.0}, {"frame": 2, "name": "CAM_02_正面_正交比例校核", "position": [0.0, -1500.0, 300.0], "lens_mm": 50.0}, {"frame": 3, "name": "CAM_03_鸟瞰_50mm", "position": [610.0, -880.0, 1340.0], "lens_mm": 50.0}, {"frame": 4, "name": "CAM_04_殿内月门_眼高1点65米_35mm", "position": [0.0, 339.0, 37.650001525878906], "lens_mm": 35.0}]}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

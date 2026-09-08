@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "01_oblique.png",
+    "Width": 1800,
+    "Height": 1350,
+    "Bytes": 2694646,
+    "SHA256": "871DDCAF5E5FB7A3F53F13715D9EE9FF45FB05A2F9C2D03D0A08C1C296E37824"
+  },
+  {
+    "Name": "02_front.png",
+    "Width": 1800,
+    "Height": 1350,
+    "Bytes": 2599420,
+    "SHA256": "C9F35EFABFC760FE37AC159EC91EFE4F015B7E6439E6A833A6A85BD1F33B0251"
+  },
+  {
+    "Name": "03_aerial.png",
+    "Width": 1800,
+    "Height": 1350,
+    "Bytes": 2718854,
+    "SHA256": "3FBD0B976A99AEAB83E9F29433DDD92E123C51D714A9C7077698477D01C84ED9"
+  },
+  {
+    "Name": "04_interior.png",
+    "Width": 1800,
+    "Height": 1350,
+    "Bytes": 2520422,
+    "SHA256": "A342E95513978F974066EA931C960E3B5502A70D3B1F9422673CC8BC4FEE42E7"
+  }
+]

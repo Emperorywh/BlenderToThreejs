@@ -1,0 +1,98 @@
+{
+  "blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Whitebox_v03.blend",
+  "scene": "天宫_阶段一_整体白模",
+  "object_count": 1170,
+  "collections": {
+    "00_参数与设计说明": 1,
+    "01_主山体与支撑岩台": 18,
+    "02_分层台基与前庭": 356,
+    "03_主殿柱网与梁架": 95,
+    "04_主殿屋顶大形": 3,
+    "05_月门长廊": 76,
+    "06_两侧回廊与角亭": 318,
+    "07_中央台阶与通行": 34,
+    "08_东侧桥与观景平台": 87,
+    "09_古松占位": 72,
+    "10_瀑布占位": 4,
+    "11_一点八米人形参照": 96,
+    "12_四个固定机位": 4,
+    "13_中性照明": 2,
+    "14_尺寸辅助_不渲染": 4
+  },
+  "cameras": [
+    {
+      "name": "CAM_01_整体斜视_55mm",
+      "position": [
+        860.0,
+        -1280.0,
+        820.0
+      ],
+      "lens_mm": 55.0,
+      "type": "PERSP"
+    },
+    {
+      "name": "CAM_02_正面_正交比例校核",
+      "position": [
+        0.0,
+        -1500.0,
+        300.0
+      ],
+      "lens_mm": 50.0,
+      "type": "ORTHO"
+    },
+    {
+      "name": "CAM_03_鸟瞰_50mm",
+      "position": [
+        610.0,
+        -880.0,
+        1340.0
+      ],
+      "lens_mm": 50.0,
+      "type": "PERSP"
+    },
+    {
+      "name": "CAM_04_殿内人视_眼高1点65米_32mm",
+      "position": [
+        0.0,
+        339.0,
+        37.650001525878906
+      ],
+      "lens_mm": 32.0,
+      "type": "PERSP"
+    }
+  ],
+  "parameters": {
+    "hall_width": 180.0,
+    "hall_depth": 100.0,
+    "hall_height": 80.0,
+    "hall_center_y": 295.0,
+    "hall_floor_z": 36.0,
+    "column_height": 46.0,
+    "column_diameter": 7.2,
+    "central_aisle_width": 60.0,
+    "courtyard_width": 220.0,
+    "courtyard_depth": 300.0,
+    "courtyard_front_y": -166.0,
+    "mountain_width": 700.0,
+    "mountain_bottom_z": -250.0,
+    "terrace_levels": [
+      0.0,
+      12.0,
+      24.0,
+      36.0
+    ],
+    "gate_center_y": -192.0,
+    "gate_opening_diameter": 32.0,
+    "gate_total_width": 300.0,
+    "corridor_center_x": 130.0,
+    "corridor_column_height": 17.0,
+    "bridge_deck_width": 12.0,
+    "bridge_deck_z": 12.0,
+    "human_height": 1.8,
+    "eye_height": 1.65,
+    "render_width": 1600,
+    "render_height": 1200,
+    "render_samples": 32,
+    "random_seed": 28
+  }
+}

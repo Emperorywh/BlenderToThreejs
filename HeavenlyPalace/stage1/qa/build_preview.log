@@ -1,0 +1,18 @@
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_whitebox.py:54: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_whitebox.py:545: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+Info: Saved as "HeavenlyPalace_Whitebox_v01.blend"
+WHITEBOX_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v01.blend
+00:10.453  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\qa\01_oblique.png'
+RENDER_DONE 01_oblique
+00:14.859  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\qa\02_front.png'
+RENDER_DONE 02_front
+00:18.531  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\qa\03_aerial.png'
+RENDER_DONE 03_aerial
+00:25.219  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\qa\04_interior.png'
+RENDER_DONE 04_interior
+STAGE_ONE_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
