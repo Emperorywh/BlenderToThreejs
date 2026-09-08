@@ -1,0 +1,73 @@
+{
+  "blender_version": "5.2.1 LTS",
+  "scene": "Tiangong_Whitebox",
+  "revision": "02_review_correction",
+  "config_sha256": "2f88521e7c0ec4b019aee6a96f58fac78e5a0931db1504fd2ac3023433cb750b",
+  "object_count": 2186,
+  "collections": {
+    "Architecture": 144,
+    "Platforms": 7,
+    "Bridges": 358,
+    "Bases": 28,
+    "Railings": 1338,
+    "Plants": 240,
+    "Waterfalls": 4,
+    "Humans": 56,
+    "Cameras": 6,
+    "Lighting": 3,
+    "Helpers": 2
+  },
+  "routes": [
+    {
+      "id": "AxisLower",
+      "horizontal_length": 24.0,
+      "rise": 8.0,
+      "slope_degrees": 18.43494882292201,
+      "step_rise": 0.2,
+      "step_run": 0.55
+    },
+    {
+      "id": "AxisUpper",
+      "horizontal_length": 29.0,
+      "rise": 12.0,
+      "slope_degrees": 22.479434397103113,
+      "step_rise": 0.2,
+      "step_run": 0.44666666666666666
+    },
+    {
+      "id": "MainToMoonL",
+      "horizontal_length": 6.0,
+      "rise": 2.0,
+      "slope_degrees": 18.43494882292201,
+      "step_rise": 0.2,
+      "step_run": 0.6
+    },
+    {
+      "id": "MainToMoonR",
+      "horizontal_length": 6.0,
+      "rise": 2.0,
+      "slope_degrees": 18.43494882292201,
+      "step_rise": 0.2,
+      "step_run": 0.6
+    },
+    {
+      "id": "MoonToPavilionL",
+      "horizontal_length": 6.0,
+      "rise": 0.0,
+      "slope_degrees": 0.0,
+      "step_rise": 0,
+      "step_run": 0
+    },
+    {
+      "id": "MoonToPavilionR",
+      "horizontal_length": 6.0,
+      "rise": 0.0,
+      "slope_degrees": 0.0,
+      "step_rise": 0,
+      "step_run": 0
+    }
+  ],
+  "mesh_count": 178,
+  "camera_count": 6,
+  "saved_blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\tiangong_whitebox.blend"
+}

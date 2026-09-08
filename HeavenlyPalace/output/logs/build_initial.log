@@ -1,0 +1,9 @@
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\scripts\build_whitebox.py:77: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\scripts\build_whitebox.py:343: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Info: Saved as "tiangong_whitebox.blend"
+TIANGONG_BUILD_COMPLETE {"blender_version": "5.2.1 LTS", "scene": "Tiangong_Whitebox", "revision": "01_initial", "config_sha256": "9da67b803c249b084c6e00017484956648a42899905d4d5644b819a1751f4e58", "object_count": 2312, "collections": {"Architecture": 144, "Platforms": 7, "Bridges": 374, "Bases": 28, "Railings": 1448, "Plants": 240, "Waterfalls": 4, "Humans": 56, "Cameras": 6, "Lighting": 3, "Helpers": 2}, "routes": [{"id": "AxisLower", "horizontal_length": 24.0, "rise": 8.0, "slope_degrees": 18.43494882292201, "step_rise": 0.2, "step_run": 0.55}, {"id": "AxisUpper", "horizontal_length": 29.0, "rise": 12.0, "slope_degrees": 22.479434397103113, "step_rise": 0.2, "step_run": 0.44666666666666666}, {"id": "MainToMoonL", "horizontal_length": 6.0, "rise": 2.0, "slope_degrees": 18.43494882292201, "step_rise": 0.2, "step_run": 0.6}, {"id": "MainToMoonR", "horizontal_length": 6.0, "rise": 2.0, "slope_degrees": 18.43494882292201, "step_rise": 0.2, "step_run": 0.6}, {"id": "MoonToPavilionL", "horizontal_length": 6.0, "rise": 0.0, "slope_degrees": 0.0, "step_rise": 0, "step_run": 0}, {"id": "MoonToPavilionR", "horizontal_length": 6.0, "rise": 0.0, "slope_degrees": 0.0, "step_rise": 0, "step_run": 0}], "mesh_count": 178, "camera_count": 6, "saved_blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\tiangong_whitebox.blend"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

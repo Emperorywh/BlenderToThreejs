@@ -1,0 +1,296 @@
+{
+  "source_blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\tiangong_whitebox_v02.blend",
+  "source_blend_sha256": "933ff7cc80ba5340e2ce4ee12f142c3daa1f553e5f60acd562439198b0088fa9",
+  "config_sha256": "45b2abc106427ed0e408b5d60e9136855786d5cde5638a42e9e12bfa37fc7e37",
+  "scene_fingerprint": "846ba4c85caf3c2d2ffae04f465041d28b2380a23ac4b1f1328cc59368d4cead",
+  "revision": "V02_mass_and_proportion",
+  "blender_version": "5.2.1 LTS",
+  "draft": true,
+  "views": [
+    {
+      "view": "front",
+      "camera": "Camera_front",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          0,
+          -390,
+          166
+        ],
+        "target": [
+          0,
+          100,
+          23
+        ],
+        "lens": 58
+      },
+      "resolution": [
+        1000,
+        625
+      ],
+      "seconds": 5.93,
+      "image_sha256": "c1cbf15c7f5b9d3909b0f767a77adb5fe51c64e2dc6205139f8feef7310fe603"
+    },
+    {
+      "view": "oblique",
+      "camera": "Camera_oblique",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          -260,
+          -310,
+          228
+        ],
+        "target": [
+          0,
+          101,
+          21
+        ],
+        "lens": 52
+      },
+      "resolution": [
+        1000,
+        625
+      ],
+      "seconds": 5.46,
+      "image_sha256": "b88ae5cbb98b545226159e16d5ee07fb9ced4824584d2548a1d3e1abea39cdda"
+    },
+    {
+      "view": "overview",
+      "camera": "Camera_overview",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          160,
+          -215,
+          285
+        ],
+        "target": [
+          0,
+          100,
+          18
+        ],
+        "lens": 48
+      },
+      "resolution": [
+        1000,
+        625
+      ],
+      "seconds": 3.18,
+      "image_sha256": "f6e0c337987108f379500c285a8ef4707d4c967c29d78b9c038b1a16586efaa9"
+    },
+    {
+      "view": "top_ortho",
+      "camera": "Camera_top_ortho",
+      "projection": "ORTHO",
+      "parameters": {
+        "type": "ORTHO",
+        "location": [
+          0,
+          97,
+          360
+        ],
+        "target": [
+          0,
+          97,
+          0
+        ],
+        "ortho_scale": 250,
+        "resolution": [
+          1600,
+          1600
+        ]
+      },
+      "resolution": [
+        1000,
+        1000
+      ],
+      "seconds": 4.2,
+      "image_sha256": "cbec27db584200c2d3e306053c9a5eaab0e8ec91e3b3ac2f1ac829f7f1d1a198"
+    },
+    {
+      "view": "side_ortho",
+      "camera": "Camera_side_ortho",
+      "projection": "ORTHO",
+      "parameters": {
+        "type": "ORTHO",
+        "location": [
+          340,
+          98,
+          25
+        ],
+        "target": [
+          0,
+          98,
+          25
+        ],
+        "ortho_scale": 254
+      },
+      "resolution": [
+        1000,
+        625
+      ],
+      "seconds": 2.92,
+      "image_sha256": "8579477cb70c09e683776391d6a468ceddac13479fe270680dfd41fc854d576b"
+    },
+    {
+      "view": "hero",
+      "camera": "Camera_hero",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          -76,
+          62,
+          26
+        ],
+        "target": [
+          0,
+          173,
+          43
+        ],
+        "lens": 40
+      },
+      "resolution": [
+        1000,
+        625
+      ],
+      "seconds": 4.33,
+      "image_sha256": "db18e2c2dbcd685d30ffd404defc5dbff6bc5cb884daa322f414b8148386cf2d"
+    }
+  ],
+  "material_values": [
+    [
+      0.24,
+      0.27,
+      0.28,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.3,
+      0.32,
+      0.33,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.32,
+      0.36,
+      0.36,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.52,
+      0.53,
+      0.53,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.62,
+      0.65,
+      0.66,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.67,
+      0.67,
+      0.65,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.75,
+      0.75,
+      0.72,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ]
+  ],
+  "shared_lighting": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "draft_samples": 12,
+    "resolution": [
+      1600,
+      1000
+    ],
+    "world_color": [
+      0.27,
+      0.28,
+      0.29,
+      1
+    ],
+    "world_strength": 0.55,
+    "exposure": 0,
+    "lights": [
+      {
+        "id": "Key",
+        "location": [
+          -105,
+          -40,
+          230
+        ],
+        "target": [
+          0,
+          110,
+          20
+        ],
+        "energy": 450000,
+        "size": 135
+      },
+      {
+        "id": "Fill",
+        "location": [
+          140,
+          70,
+          170
+        ],
+        "target": [
+          0,
+          110,
+          20
+        ],
+        "energy": 160000,
+        "size": 120
+      },
+      {
+        "id": "Top",
+        "location": [
+          -20,
+          230,
+          250
+        ],
+        "target": [
+          0,
+          110,
+          20
+        ],
+        "energy": 250000,
+        "size": 125
+      }
+    ]
+  },
+  "baseline_model_preserved": null,
+  "same_geometry_and_visibility": true
+}

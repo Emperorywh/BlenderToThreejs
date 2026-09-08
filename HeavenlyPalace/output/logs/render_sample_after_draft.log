@@ -1,0 +1,13 @@
+00:02.266  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\tiangong_hall_sample_v03.blend"
+00:30.203  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\review_sample_v03_initial\after\sample_close.png'
+SAMPLE_RENDER after sample_close
+00:41.219  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\review_sample_v03_initial\after\joint_detail.png'
+SAMPLE_RENDER after joint_detail
+00:49.875  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\review_sample_v03_initial\after\hall_front.png'
+SAMPLE_RENDER after hall_front
+00:57.766  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\review_sample_v03_initial\after\hall_oblique.png'
+SAMPLE_RENDER after hall_oblique
+SAMPLE_RENDER_COMPLETE after
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

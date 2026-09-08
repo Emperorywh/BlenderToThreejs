@@ -1,0 +1,130 @@
+{
+  "project": "云顶天宫 · 第一阶段全场景白模",
+  "revision": "V02_mass_and_proportion",
+  "outputs": {"blend": "output/tiangong_whitebox_v02.blend", "previews": "output/previews_v02", "report_suffix": "_v02"},
+  "dimension_basis": "参考比例的首版设计假设，非图片精确测量；所有长度为米",
+  "coordinates": {"unit_scale": 1.0, "origin": "迎宾台中心，台面 Z=0", "forward": "+Y", "up": "+Z"},
+  "platforms": [
+    {"id": "Welcome", "label": "迎宾浮台", "center": [0, 0, 0], "size": [74, 26], "corner": 3, "slab": 1.3, "base_depth": 14},
+    {"id": "Relay", "label": "中继浮台", "center": [0, 75, 10], "size": [52, 22], "corner": 2, "slab": 1.2, "base_depth": 18},
+    {"id": "Main", "label": "主殿高台", "center": [0, 172, 28], "size": [94, 70], "corner": 5, "slab": 1.5, "base_depth": 34},
+    {"id": "MoonL", "label": "左月门侧台", "center": [-65, 160, 25], "size": [20, 23], "corner": 2, "slab": 1.2, "base_depth": 23},
+    {"id": "MoonR", "label": "右月门侧台", "center": [65, 177, 25], "size": [20, 24], "corner": 2, "slab": 1.2, "base_depth": 21},
+    {"id": "PavilionL", "label": "左亭浮台", "center": [-87, 167, 25], "size": [12, 14], "corner": 2, "slab": 1.0, "base_depth": 12},
+    {"id": "PavilionR", "label": "右亭浮台", "center": [87, 180, 25], "size": [12, 14], "corner": 2, "slab": 1.0, "base_depth": 12}
+  ],
+  "routes": [
+    {"id": "AxisLower", "from": "Welcome", "to": "Relay", "start": [0, 13, 0], "end": [0, 64, 10], "width": 12.5, "steps": 50, "thickness": 1.15, "landing_every": 0, "landing_length": 0,
+     "segments": [{"run": 12, "rise": 0, "steps": 0}, {"run": 18, "rise": 5, "steps": 25}, {"run": 5, "rise": 0, "steps": 0}, {"run": 16, "rise": 5, "steps": 25}]},
+    {"id": "AxisUpper", "from": "Relay", "to": "Main", "start": [0, 86, 10], "end": [0, 137, 28], "width": 12.5, "steps": 90, "thickness": 1.35, "landing_every": 0, "landing_length": 0,
+     "segments": [{"run": 6, "rise": 0, "steps": 0}, {"run": 19, "rise": 9, "steps": 45}, {"run": 5, "rise": 0, "steps": 0}, {"run": 21, "rise": 9, "steps": 45}]},
+    {"id": "MainToMoonL", "from": "MoonL", "to": "Main", "start": [-55, 160, 25], "end": [-47, 160, 28], "width": 5, "steps": 15, "thickness": 0.8, "landing_every": 0, "landing_length": 0},
+    {"id": "MainToMoonR", "from": "MoonR", "to": "Main", "start": [55, 177, 25], "end": [47, 177, 28], "width": 5, "steps": 15, "thickness": 0.8, "landing_every": 0, "landing_length": 0},
+    {"id": "MoonToPavilionL", "from": "MoonL", "to": "PavilionL", "start": [-75, 167, 25], "end": [-81, 167, 25], "width": 4, "steps": 0, "thickness": 0.7, "landing_every": 0, "landing_length": 0},
+    {"id": "MoonToPavilionR", "from": "MoonR", "to": "PavilionR", "start": [75, 180, 25], "end": [81, 180, 25], "width": 4, "steps": 0, "thickness": 0.7, "landing_every": 0, "landing_length": 0}
+  ],
+  "hall": {
+    "center": [0, 174, 28], "body_size": [60, 42, 20],
+    "column_x": [-30, -22.5, -15, -7.5, 7.5, 15, 22.5, 30], "column_y": [153, 160, 167, 174, 181, 188, 195],
+    "column_radius": 0.78, "column_height": 19.2, "inner_column_row_y": 160,
+    "wall_y": 163, "wall_thickness": 1.5, "wall_height": 19.0,
+    "side_wall_x": 26.5, "rear_wall_y": 193.8,
+    "facade_bays": {"centers": [-26.25, -18.75, -11.25, 11.25, 18.75, 26.25], "width": 7.5, "pier_width": 1.05, "sill_height": 1.2, "opening_top": 14.6},
+    "main_gate": {"width": 15, "height": 19.0, "radius": 6.6, "center_height": 6.15, "ring_width": 0.6},
+    "roof_layers": [
+      {"width": 80, "depth": 58, "eave_z": 47.6, "rise": 5.3, "corner_lift": 1.8, "edge_lift": 0.18, "curve_power": 1.65, "thickness": 0.48},
+      {"width": 73, "depth": 50, "eave_z": 50.6, "rise": 6.1, "corner_lift": 1.95, "edge_lift": 0.18, "curve_power": 1.65, "thickness": 0.48},
+      {"width": 61, "depth": 40, "eave_z": 54.0, "rise": 8.3, "corner_lift": 2.0, "edge_lift": 0.16, "curve_power": 1.72, "thickness": 0.48}
+    ],
+    "roof_thickness": 0.28, "roof_curve_power": 2.15, "roof_ring_segments": 24, "roof_edge_segments": 16,
+    "roof_support_bands": [{"width": 55, "depth": 36, "spacing": 5.5, "post_width": 0.6, "beam_height": 0.65}, {"width": 43, "depth": 27, "spacing": 5.5, "post_width": 0.6, "beam_height": 0.65}]
+  },
+  "side_gates": [
+    {"id": "GateL", "center": [-65, 161, 25], "width": 16, "height": 10.5, "thickness": 1.2, "radius": 4.15, "center_height": 3.85, "ring_width": 0.4, "roof_width": 20, "roof_depth": 5.5, "roof_rise": 2.1},
+    {"id": "GateR", "center": [65, 178, 25], "width": 16, "height": 10.5, "thickness": 1.2, "radius": 4.15, "center_height": 3.85, "ring_width": 0.4, "roof_width": 20, "roof_depth": 5.5, "roof_rise": 2.1}
+  ],
+  "pavilions": [
+    {"id": "PavilionL", "center": [-87, 167, 25], "body_size": [6.5, 6.5, 6], "column_radius": 0.24, "roof_size": [10, 10], "roof_rise": 3.0},
+    {"id": "PavilionR", "center": [87, 180, 25], "body_size": [6.5, 6.5, 6], "column_radius": 0.24, "roof_size": [10, 10], "roof_rise": 3.0}
+  ],
+  "railings": {"height": 1.18, "post_size": 0.26, "post_spacing": 2.6, "beam_size": 0.13, "edge_inset": 0.35, "portal_clearance": 0.28},
+  "pines": [
+    {"id": "WelcomeL", "position": [-29, 4, 0], "height": 9.5, "spread": 11, "bend": [2.8, -0.7], "seed": 11},
+    {"id": "WelcomeR", "position": [29, 5, 0], "height": 8.5, "spread": 10, "bend": [-2.5, -0.4], "seed": 12},
+    {"id": "RelayL", "position": [-19, 75, 10], "height": 6.0, "spread": 7, "bend": [1.8, 0.6], "seed": 13},
+    {"id": "RelayR", "position": [20, 77, 10], "height": 5.2, "spread": 6, "bend": [-1.4, 0.2], "seed": 14},
+    {"id": "MainL", "position": [-38, 147, 28], "height": 8, "spread": 9, "bend": [2.6, 0.5], "seed": 15},
+    {"id": "MainR", "position": [38, 191, 28], "height": 6.5, "spread": 8, "bend": [-1.4, 0.8], "seed": 16},
+    {"id": "MoonL", "position": [-71, 155, 25], "height": 8, "spread": 9, "bend": [2.1, -0.5], "seed": 17},
+    {"id": "MoonR", "position": [71, 171, 25], "height": 6.5, "spread": 8, "bend": [-1.8, 0.3], "seed": 18},
+    {"id": "PavilionL", "position": [-90, 171, 25], "height": 4.6, "spread": 5.5, "bend": [-0.6, 0.5], "seed": 19},
+    {"id": "PavilionR", "position": [90, 184, 25], "height": 4.6, "spread": 5.5, "bend": [0.7, 0.3], "seed": 20}
+  ],
+  "waterfalls": [
+    {"id": "WaterfallL", "lip": [-64, 148.5, 25], "width": 7, "drop": 26, "outward": [0, -1, 0]},
+    {"id": "WaterfallR", "lip": [66, 165, 25], "width": 4.6, "drop": 24, "outward": [0, -1, 0]}
+  ],
+  "human_height": 1.75,
+  "humans": [[-2, 6, 0], [2, 10, 0], [-3, 75, 10], [2, 79, 10], [-3, 143, 28], [3, 157, 28], [-65, 157, 25], [87, 177, 25]],
+  "cloud_marker_z": -5,
+  "island_masses": {
+    "Welcome": [
+      {"offset": [-21, 1, -3.1], "size": [34, 23, 10], "lean": [-3, 2], "seed": 101},
+      {"offset": [7, 0, -3.1], "size": [43, 23, 8], "lean": [4, -1], "seed": 102},
+      {"offset": [28, 1, -3.1], "size": [17, 21, 12], "lean": [-2, 1], "seed": 103}
+    ],
+    "Relay": [
+      {"offset": [-14, 0, -3], "size": [25, 20, 17], "lean": [-4, 1], "seed": 111},
+      {"offset": [7, 1, -3], "size": [32, 20, 13], "lean": [3, -2], "seed": 112},
+      {"offset": [19, -1, -3], "size": [14, 16, 10], "lean": [1, 2], "seed": 113}
+    ],
+    "Main": [
+      {"offset": [0, 0, -4.8], "size": [70, 52, 29], "lean": [2, 1], "seed": 121},
+      {"offset": [-26, 3, -4.8], "size": [34, 33, 31], "lean": [-4, 2], "seed": 122},
+      {"offset": [29, 8, -4.8], "size": [30, 36, 24], "lean": [3, -3], "seed": 123},
+      {"offset": [-20, -20, -4.8], "size": [28, 28, 26], "lean": [-3, -4], "seed": 124},
+      {"offset": [18, -18, -4.8], "size": [32, 29, 34], "lean": [5, -2], "seed": 125},
+      {"offset": [0, 22, -4.8], "size": [43, 24, 25], "lean": [-2, 3], "seed": 126}
+    ],
+    "MoonL": [
+      {"offset": [-3, 1, -3.1], "size": [14, 23, 23], "lean": [-3, 2], "seed": 131},
+      {"offset": [5, 0, -3.1], "size": [11, 21, 14], "lean": [1, -3], "seed": 132},
+      {"offset": [0, -7, -3.1], "size": [16, 8, 18], "lean": [2, 1], "seed": 133}
+    ],
+    "MoonR": [
+      {"offset": [-4, 2, -3.1], "size": [13, 23, 14], "lean": [-1, 2], "seed": 141},
+      {"offset": [4, -1, -3.1], "size": [13, 22, 21], "lean": [3, -2], "seed": 142},
+      {"offset": [0, -8, -3.1], "size": [16, 8, 12], "lean": [-2, -1], "seed": 143}
+    ],
+    "PavilionL": [
+      {"offset": [-2, 0, -2.8], "size": [10, 13, 9], "lean": [2, 1], "seed": 151},
+      {"offset": [3, 2, -2.8], "size": [7, 10, 6], "lean": [-1, -1], "seed": 152}
+    ],
+    "PavilionR": [
+      {"offset": [2, -1, -2.8], "size": [10, 12, 7], "lean": [-1, -2], "seed": 161},
+      {"offset": [-3, 3, -2.8], "size": [7, 9, 10], "lean": [1, 1], "seed": 162}
+    ]
+  },
+  "materials": {
+    "plaster": [0.67, 0.67, 0.65, 1], "roof": [0.30, 0.32, 0.33, 1],
+    "stone": [0.52, 0.53, 0.53, 1], "trim": [0.75, 0.75, 0.72, 1],
+    "plant": [0.32, 0.36, 0.36, 1], "water": [0.62, 0.65, 0.66, 1], "human": [0.24, 0.27, 0.28, 1]
+  },
+  "cameras": {
+    "front": {"type": "PERSP", "location": [0, -390, 166], "target": [0, 100, 23], "lens": 58},
+    "oblique": {"type": "PERSP", "location": [-260, -310, 228], "target": [0, 101, 21], "lens": 52},
+    "overview": {"type": "PERSP", "location": [160, -215, 285], "target": [0, 100, 18], "lens": 48},
+    "top_ortho": {"type": "ORTHO", "location": [0, 97, 360], "target": [0, 97, 0], "ortho_scale": 250, "resolution": [1600, 1600]},
+    "side_ortho": {"type": "ORTHO", "location": [340, 98, 25], "target": [0, 98, 25], "ortho_scale": 254},
+    "hero": {"type": "PERSP", "location": [-76, 62, 26], "target": [0, 173, 43], "lens": 40}
+  },
+  "render": {
+    "engine": "CYCLES", "samples": 32, "draft_samples": 12, "resolution": [1600, 1000],
+    "world_color": [0.27, 0.28, 0.29, 1], "world_strength": 0.55, "exposure": 0,
+    "lights": [
+      {"id": "Key", "location": [-105, -40, 230], "target": [0, 110, 20], "energy": 450000, "size": 135},
+      {"id": "Fill", "location": [140, 70, 170], "target": [0, 110, 20], "energy": 160000, "size": 120},
+      {"id": "Top", "location": [-20, 230, 250], "target": [0, 110, 20], "energy": 250000, "size": 125}
+    ]
+  }
+}

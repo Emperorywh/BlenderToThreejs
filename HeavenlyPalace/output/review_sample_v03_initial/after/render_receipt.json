@@ -1,0 +1,421 @@
+{
+  "variant": "after",
+  "source_blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\tiangong_hall_sample_v03.blend",
+  "source_sha256": "374c05f8169f98e5bac4297f78d91d638d79a4d358ffda1c0bf36b437a8da59a",
+  "sample_config_sha256": "fdb66b0e987257850fdd08372d654df9a4383f988db4637246bfee4db5cfe5cf",
+  "base_config_sha256": "022556b2a029df94d969695e1acd294a6988927e564648c763353d864051bd62",
+  "draft": true,
+  "blender": "5.2.1 LTS",
+  "materials": [
+    [
+      0.24,
+      0.27,
+      0.28,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.3,
+      0.32,
+      0.33,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.32,
+      0.36,
+      0.36,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.52,
+      0.53,
+      0.53,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.62,
+      0.65,
+      0.66,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.67,
+      0.67,
+      0.65,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ],
+    [
+      0.75,
+      0.75,
+      0.72,
+      1.0,
+      0.87,
+      0.0,
+      0.18
+    ]
+  ],
+  "lights": [
+    {
+      "name": "Light_Fill",
+      "matrix": [
+        [
+          0.2747211158275604,
+          -0.6899387836456299,
+          0.6697109341621399,
+          140.0
+        ],
+        [
+          0.9615239500999451,
+          0.19712543487548828,
+          -0.19134590029716492,
+          70.0
+        ],
+        [
+          -1.0198527888860554e-07,
+          0.6965098977088928,
+          0.7175471782684326,
+          170.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 160000.0,
+      "size": 120.0,
+      "shape": "DISK",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false
+    },
+    {
+      "name": "Light_Key",
+      "matrix": [
+        [
+          0.8192318677902222,
+          0.43223848938941956,
+          -0.3768673837184906,
+          -105.0
+        ],
+        [
+          -0.5734624266624451,
+          0.6174834370613098,
+          -0.5383818745613098,
+          -40.0
+        ],
+        [
+          2.7680657765927208e-08,
+          0.6571788787841797,
+          0.7537346482276917,
+          230.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 450000.0,
+      "size": 135.0,
+      "shape": "DISK",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false
+    },
+    {
+      "name": "Light_Top",
+      "matrix": [
+        [
+          -0.986393928527832,
+          0.14532236754894257,
+          -0.07686629146337509,
+          -20.0
+        ],
+        [
+          -0.1643989533185959,
+          -0.8719344735145569,
+          0.4611976444721222,
+          230.0
+        ],
+        [
+          -3.414988469785385e-08,
+          0.467559278011322,
+          0.8839617371559143,
+          250.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 250000.0,
+      "size": 125.0,
+      "shape": "DISK",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hide_render": false
+    }
+  ],
+  "world": {
+    "color": [
+      0.27000001072883606,
+      0.2800000011920929,
+      0.28999999165534973,
+      1.0
+    ],
+    "strength": 0.550000011920929
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "samples": 12,
+    "denoise": true,
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "transparent": false
+  },
+  "models_sha256": "0e562861b7ede3db3369888f39dabd52a684e5c21f1753897585be9a3b933e63",
+  "views": [
+    {
+      "name": "sample_close",
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\review_sample_v03_initial\\after\\sample_close.png",
+      "camera": {
+        "matrix_world": [
+          [
+            0.9185916781425476,
+            0.025276152417063713,
+            0.39439886808395386,
+            33.0
+          ],
+          [
+            0.3952079713344574,
+            -0.05875001475214958,
+            -0.9167110323905945,
+            112.0
+          ],
+          [
+            1.2576366614780454e-08,
+            0.9979526996612549,
+            -0.0639566108584404,
+            39.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "PERSP",
+        "lens": 52.0,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "clip": [
+          0.10000000149011612,
+          2000.0
+        ],
+        "dof": false
+      },
+      "resolution": [
+        960,
+        960
+      ],
+      "sha256": "c385f8a8184162da215f7bb077b23272b23ebf11967e42ccba30485cc3aa88a4",
+      "seconds": 26.21
+    },
+    {
+      "name": "joint_detail",
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\review_sample_v03_initial\\after\\joint_detail.png",
+      "camera": {
+        "matrix_world": [
+          [
+            0.8944271802902222,
+            0.056682150810956955,
+            0.44360700249671936,
+            29.0
+          ],
+          [
+            0.44721364974975586,
+            -0.11336424946784973,
+            -0.8872138857841492,
+            124.0
+          ],
+          [
+            -1.5842793743559014e-08,
+            0.9919353127479553,
+            -0.1267451047897339,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "PERSP",
+        "lens": 60.0,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "clip": [
+          0.10000000149011612,
+          2000.0
+        ],
+        "dof": false
+      },
+      "resolution": [
+        960,
+        660
+      ],
+      "sha256": "f5cfdabdc1e78a85f69fd130c4f7152a13957f8eabbc4f7ff799d0b05660fcbc",
+      "seconds": 10.52
+    },
+    {
+      "name": "hall_front",
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\review_sample_v03_initial\\after\\hall_front.png",
+      "camera": {
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.17338970303535461,
+            -0.9848532676696777,
+            33.0
+          ],
+          [
+            0.0,
+            0.9848532676696777,
+            0.17338970303535461,
+            69.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "PERSP",
+        "lens": 50.0,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "clip": [
+          0.10000000149011612,
+          2000.0
+        ],
+        "dof": false
+      },
+      "resolution": [
+        960,
+        660
+      ],
+      "sha256": "5aa249a438cbf4802ea730241eabd997a96c8d3a67b2dea647050111a9e493a6",
+      "seconds": 8.5
+    },
+    {
+      "name": "hall_oblique",
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\review_sample_v03_initial\\after\\hall_oblique.png",
+      "camera": {
+        "matrix_world": [
+          [
+            0.7979286909103394,
+            -0.1507554054260254,
+            0.583594560623169,
+            105.0
+          ],
+          [
+            0.6027518510818481,
+            0.1995714008808136,
+            -0.7725681066513062,
+            35.0
+          ],
+          [
+            4.661677266426523e-08,
+            0.9682169556617737,
+            0.250111848115921,
+            89.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "PERSP",
+        "lens": 52.0,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "clip": [
+          0.10000000149011612,
+          2000.0
+        ],
+        "dof": false
+      },
+      "resolution": [
+        960,
+        660
+      ],
+      "sha256": "d921b40a5de2f6b1bfdfe300c622e0486ebd1924d3091c16d6932cc8f178514a",
+      "seconds": 7.39
+    }
+  ],
+  "same_models_and_visibility_for_all_views": true
+}

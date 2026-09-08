@@ -1,0 +1,31 @@
+{
+  "revision": "V03_main_hall_sample_A",
+  "scope": "正立面右侧两开间；三条柱轴、双排柱及对应的三层前檐，不向全殿复制",
+  "base_blend": "output/tiangong_whitebox_v02.blend",
+  "base_blend_sha256": "93fd397acbe29414d7a46bbd454f9e5195fdc5b74314d660cb58a2b47e7f1d8c",
+  "base_config": "scene_config.json",
+  "base_config_sha256": "022556b2a029df94d969695e1acd294a6988927e564648c763353d864051bd62",
+  "output_blend": "output/tiangong_hall_sample_v03.blend",
+  "output_images": "output/previews_sample_v03",
+  "sample": {
+    "column_axes_x": [7.5, 15, 22.5],
+    "column_rows_y": [153, 160],
+    "edge_x": [6.6, 23.4],
+    "shaft_top_z": 46.0,
+    "capital": {"collar_radius": 1.06, "collar_height": 0.32, "seat_width": 2.14, "seat_height": 0.42, "arm_width": 3.2},
+    "roof": {"rafter_spacing": 1.2, "rafter_width": 0.22, "rafter_height": 0.32, "fascia_depth": 0.25, "fascia_height": 0.48, "purlin_width": 0.48, "purlin_height": 0.46, "structural_back_y": 164.8, "transfer_beam_width": 0.74, "transfer_beam_height": 0.78},
+    "roof_bearings": [[147.7, 153, 160.5], [151.7, 155.5, 160.5], [156.7, 160, 164]],
+    "wall_bays": [11.25, 18.75],
+    "wall_frame_depth": 0.48,
+    "wall_frame_width": 0.34,
+    "door_top_z": 38.2,
+    "wall_plane_front_y": 162.25
+  },
+  "cameras": {
+    "sample_close": {"location": [33, 112, 39], "target": [14.5, 155, 42], "lens": 52, "resolution": [1600, 1600]},
+    "joint_detail": {"location": [29, 124, 44], "target": [15, 152, 48], "lens": 60, "resolution": [1600, 1100]},
+    "hall_front": {"location": [0, 33, 69], "target": [0, 175, 44], "lens": 50, "resolution": [1600, 1100]},
+    "hall_oblique": {"location": [105, 35, 89], "target": [0, 174, 44], "lens": 52, "resolution": [1600, 1100]}
+  },
+  "render": {"samples": 48, "draft_samples": 12, "draft_scale": 0.6, "engine": "CYCLES", "use_v02_materials_and_lights": true}
+}

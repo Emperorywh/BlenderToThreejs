@@ -1,0 +1,166 @@
+{
+  "source_blend": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\output\\tiangong_whitebox.blend",
+  "source_blend_sha256": "9732e5cda152232c1a3b5ec2ccfa78312189be87531ba7d50c4583fdda35838f",
+  "config_sha256": "2f88521e7c0ec4b019aee6a96f58fac78e5a0931db1504fd2ac3023433cb750b",
+  "scene_fingerprint": "76ec623c23c61a9e7c67cd1c8620a754c60d3a78f4c1217266a30aeeb82cec3b",
+  "revision": "02_review_correction",
+  "blender_version": "5.2.1 LTS",
+  "draft": false,
+  "views": [
+    {
+      "view": "front",
+      "camera": "Camera_front",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          0,
+          -186,
+          80
+        ],
+        "target": [
+          0,
+          62,
+          16
+        ],
+        "lens": 42
+      },
+      "resolution": [
+        1600,
+        1000
+      ],
+      "seconds": 19.01,
+      "image_sha256": "937fa41b6d990f31ce7a261387a4d9184cc2316b1fe0a35c324daa2d87c9e83e"
+    },
+    {
+      "view": "left",
+      "camera": "Camera_left",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          -166,
+          -144,
+          141
+        ],
+        "target": [
+          0,
+          65,
+          13
+        ],
+        "lens": 48
+      },
+      "resolution": [
+        1600,
+        1000
+      ],
+      "seconds": 19.05,
+      "image_sha256": "d53d63233409690fe63deb8e6c2e8f44b1f555f5a45a9993315a603bbd0295af"
+    },
+    {
+      "view": "right",
+      "camera": "Camera_right",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          166,
+          -144,
+          141
+        ],
+        "target": [
+          0,
+          65,
+          13
+        ],
+        "lens": 48
+      },
+      "resolution": [
+        1600,
+        1000
+      ],
+      "seconds": 18.96,
+      "image_sha256": "58ec8beb29e033661660419748f73f6b53126c6ad6d3f23b76758fc35854173a"
+    },
+    {
+      "view": "overview",
+      "camera": "Camera_overview",
+      "projection": "PERSP",
+      "parameters": {
+        "type": "PERSP",
+        "location": [
+          109,
+          -127,
+          189
+        ],
+        "target": [
+          0,
+          59,
+          10
+        ],
+        "lens": 42
+      },
+      "resolution": [
+        1600,
+        1000
+      ],
+      "seconds": 18.12,
+      "image_sha256": "b6a68f53ba1b04276ba0cd2007d5abd342b73a48bd6194b04399959b664c8025"
+    },
+    {
+      "view": "top_ortho",
+      "camera": "Camera_top_ortho",
+      "projection": "ORTHO",
+      "parameters": {
+        "type": "ORTHO",
+        "location": [
+          0,
+          59,
+          260
+        ],
+        "target": [
+          0,
+          59,
+          0
+        ],
+        "ortho_scale": 190,
+        "resolution": [
+          1600,
+          1400
+        ]
+      },
+      "resolution": [
+        1600,
+        1400
+      ],
+      "seconds": 26.61,
+      "image_sha256": "164a74815ca96e42819cafdbebc002b994b967187f9513d785d23e2580518381"
+    },
+    {
+      "view": "side_ortho",
+      "camera": "Camera_side_ortho",
+      "projection": "ORTHO",
+      "parameters": {
+        "type": "ORTHO",
+        "location": [
+          240,
+          58,
+          20
+        ],
+        "target": [
+          0,
+          58,
+          20
+        ],
+        "ortho_scale": 174
+      },
+      "resolution": [
+        1600,
+        1000
+      ],
+      "seconds": 16.88,
+      "image_sha256": "1b3450bb298987df9ebb328cf7409f64ad499a106b1a127412396799ae47f024"
+    }
+  ],
+  "same_geometry_and_visibility": true
+}

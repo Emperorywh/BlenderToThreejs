@@ -1,0 +1,17 @@
+00:01.735  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\tiangong_whitebox.blend"
+00:20.625  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\front.png'
+TIANGONG_RENDER_VIEW front
+00:39.766  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\left.png'
+TIANGONG_RENDER_VIEW left
+00:58.735  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\right.png'
+TIANGONG_RENDER_VIEW right
+01:16.875  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\overview.png'
+TIANGONG_RENDER_VIEW overview
+01:43.485  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\top_ortho.png'
+TIANGONG_RENDER_VIEW top_ortho
+02:00.422  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\previews\side_ortho.png'
+TIANGONG_RENDER_VIEW side_ortho
+TIANGONG_RENDER_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
