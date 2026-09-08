@@ -1,9 +1,0 @@
-00:03.016  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\tiangong_whitebox_v01.blend"
-00:30.172  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\comparison\v01\front.png'
-TIANGONG_RENDER_VIEW front
-00:51.875  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\comparison\v01\oblique.png'
-TIANGONG_RENDER_VIEW oblique
-TIANGONG_RENDER_COMPLETE
-Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
-
-Blender quit

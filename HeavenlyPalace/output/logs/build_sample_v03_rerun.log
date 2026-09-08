@@ -1,6 +1,0 @@
-00:02.312  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\output\tiangong_whitebox_v02.blend"
-Info: Saved as "tiangong_hall_sample_v03.blend"
-SAMPLE_BUILD_COMPLETE {"checks": {"outside_sample_unchanged": true, "hall_outer_dimensions_frozen": true, "all_three_original_roofs_unchanged": true, "moon_gate_unchanged": true, "closed_positive_sample_meshes": true, "other_scenes_unchanged": true}, "changed": 7, "removed": 16, "added": 256}
-Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
-
-Blender quit
