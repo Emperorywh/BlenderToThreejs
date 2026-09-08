@@ -1,0 +1,60 @@
+{
+  "blend": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Structure_v05.blend",
+    "bytes": 2048703,
+    "sha256": "9A591F074691AF45414A6393E89FBBCEB5AAB58F628DC2EC1A87B5AF4870BC9F"
+  },
+  "baseline": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Whitebox_v04.blend",
+    "sha256": "7D79E1739EA83A138FDADB06A11C4886CD0DD990E10A51E0903F06768156BBCC",
+    "unchanged": true
+  },
+  "geometry_audit_passed": true,
+  "original_camera_count": 4,
+  "added_camera_count": 2,
+  "renderer": "Blender 5.2.1 / Cycles CPU / 48 最大采样 / 降噪",
+  "renders": [
+    {
+      "file": "01_oblique.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2700183,
+      "sha256": "F55973F7662E3D28823A2AFC13185307D0C2B16BB6F811731982775A026EB7F5"
+    },
+    {
+      "file": "02_front.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2607324,
+      "sha256": "86DA916017559B45F1DDF428819EB689D7B9444F77ABBD3DC5CD79597BF3661D"
+    },
+    {
+      "file": "03_aerial.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2725277,
+      "sha256": "8130AC9C7743B37E79056CFF257AFAE292838CEA4853F4C6B512FFB6F7FBD1C7"
+    },
+    {
+      "file": "04_interior.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2605180,
+      "sha256": "8E4668676D6449E8DC9D345678A23101B262F5646F9FFC6ADEC0CC8CFC291D0B"
+    },
+    {
+      "file": "05_roof_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2796319,
+      "sha256": "89D1F84CC342C14732775AC02EBF0F89C0A6A8FF798C78CCC16D24AB4C616DA7"
+    },
+    {
+      "file": "06_moon_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2674832,
+      "sha256": "52EC71B765D1E78F97E73EEEDB426DA8B93D06964B93098D88F8CD1FAA8C829A"
+    }
+  ]
+}

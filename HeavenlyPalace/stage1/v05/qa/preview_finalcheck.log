@@ -1,0 +1,18 @@
+00:01.657  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v04.blend"
+00:01.782  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Whitebox_v04.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_structure_v05.py:54: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  data.use_nodes=True
+Info: Saved as "v05_working.blend"
+V05_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\v05_working.blend
+00:21.000  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\05_roof_detail.png'
+V05_RENDER 5 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\05_roof_detail.png
+00:38.625  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\06_moon_detail.png'
+V05_RENDER 6 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\06_moon_detail.png
+00:47.453  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\01_oblique.png'
+V05_RENDER 1 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\01_oblique.png
+00:56.703  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\03_aerial.png'
+V05_RENDER 3 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v05\qa\03_aerial.png
+V05_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

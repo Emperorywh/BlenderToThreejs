@@ -21,6 +21,12 @@ if PARAM_PATH.exists():
     P = json.loads(PARAM_PATH.read_text(encoding="utf-8"))
 else:
     P = json.loads(bpy.data.texts["01_设计参数.json"].as_string())
+# 当前工程已经进入 V5 结构阶段，旧命令入口同步转到 V4 基准上的结构重建。
+# 历史白模文件与下方原生成逻辑保留，防止误执行旧入口退回 V3 的月门布局。
+if P.get("active_stage") == "v05":
+    import runpy
+    runpy.run_path(str(ROOT / P["active_rebuild_script"]), run_name="__main__")
+    raise SystemExit
 rng = random.Random(P["random_seed"])
 SCENE = bpy.data.scenes.new("天宫_阶段一_整体白模")
 bpy.context.window.scene = SCENE
