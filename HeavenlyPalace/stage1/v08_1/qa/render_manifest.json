@@ -1,0 +1,16 @@
+{
+  "4": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08_1\\renders\\04_interior.png",
+    "camera": "CAM_04_殿内望云_v08_1",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 64,
+    "denoising": true,
+    "seconds": 267.33,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"
+  }
+}

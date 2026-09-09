@@ -1,0 +1,128 @@
+{
+  "source_sha256": "b7c11869e07c7374e58095fb9e7969eec94f404b3e99fd04e8dcae01b07747d0",
+  "protected_count": 8152,
+  "changed_protected_objects": [],
+  "original_cameras_preserved": true,
+  "fixed_markers_preserved": true,
+  "changed_visibility": [],
+  "collection_visibility_preserved": true,
+  "world_preserved": true,
+  "exposure_preserved": true,
+  "new_camera": {
+    "name": "CAM_04_殿内望云_v08_1",
+    "position": [
+      24.0,
+      365.0,
+      37.650001525878906
+    ],
+    "rotation_radians": [
+      1.6908140182495117,
+      -9.384659449551691e-08,
+      2.9519011974334717
+    ],
+    "lens_mm": 52.0,
+    "shift": [
+      -0.11999999731779099,
+      0.0
+    ],
+    "eye_height": 1.6500015258789062
+  },
+  "people": [
+    {
+      "number": "01",
+      "height": 1.7999992370605469,
+      "foot_z": 36.0
+    },
+    {
+      "number": "02",
+      "height": 1.7999992370605469,
+      "foot_z": 36.0
+    },
+    {
+      "number": "03",
+      "height": 1.7999992370605469,
+      "foot_z": 36.0
+    }
+  ],
+  "clouds_touching_plaza_walking_height": [],
+  "clouds_above_front_plaza": [
+    {
+      "name": "V08_1_入口后侧低云舌_01",
+      "bounds": [
+        [
+          -150.0,
+          -178.0,
+          24.5
+        ],
+        [
+          -90.0,
+          -160.0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "name": "V08_1_入口后侧低云舌_02",
+      "bounds": [
+        [
+          -125.0,
+          -178.0,
+          24.5
+        ],
+        [
+          -65.0,
+          -160.0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "name": "V08_1_入口后侧低云舌_03",
+      "bounds": [
+        [
+          -100.0,
+          -178.0,
+          24.5
+        ],
+        [
+          -40.0,
+          -160.0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "name": "V08_1_入口后侧低云舌_04",
+      "bounds": [
+        [
+          -75.0,
+          -178.0,
+          24.5
+        ],
+        [
+          -15.0,
+          -160.0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "name": "V08_1_入口后侧低云舌_05",
+      "bounds": [
+        [
+          -50.0,
+          -178.0,
+          24.5
+        ],
+        [
+          10.0,
+          -160.0,
+          42.5
+        ]
+      ]
+    }
+  ],
+  "moon_geometry_unchanged": true,
+  "source_support_and_route_audit": true,
+  "preservation_passed": true
+}

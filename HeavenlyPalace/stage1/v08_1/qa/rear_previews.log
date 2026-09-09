@@ -1,0 +1,10 @@
+00:01.609  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\candidate_scene.blend"
+00:28.234  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\E_rear.png'
+REAR_PREVIEW_READY E_rear
+00:54.391  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\F_rear_right.png'
+REAR_PREVIEW_READY F_rear_right
+01:22.172  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\G_rear_right_wide.png'
+REAR_PREVIEW_READY G_rear_right_wide
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

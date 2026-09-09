@@ -1,0 +1,8 @@
+00:02.156  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\inspect_interior_v08_1.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  report = {'objects': rows, 'collections': {c.name: len(c.all_objects) for c in bpy.data.collections}, 'markers': [(m.frame, m.name, m.camera.name if m.camera else None) for m in scene.timeline_markers], 'render': {'engine': scene.render.engine, 'samples': scene.cycles.samples, 'threads': scene.render.threads, 'resolution': [scene.render.resolution_x, scene.render.resolution_y]}, 'cloud_materials': {m.name: [(n.name, n.type, {i.name: str(i.default_value) for i in n.inputs if hasattr(i, 'default_value')}) for n in m.node_tree.nodes] for m in bpy.data.materials if m.use_nodes and '云' in m.name}}
+INSPECTION_READY
+00:23.703  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\before_preview.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

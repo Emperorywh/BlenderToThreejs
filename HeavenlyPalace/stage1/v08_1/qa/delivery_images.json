@@ -1,0 +1,38 @@
+[
+  {
+    "File": "00_before_after_comparison.png",
+    "Width": 1840,
+    "Height": 760,
+    "Bytes": 1819308
+  },
+  {
+    "File": "00_before_v08.png",
+    "Width": 900,
+    "Height": 675,
+    "Bytes": 665439
+  },
+  {
+    "File": "01_oblique_check.png",
+    "Width": 900,
+    "Height": 675,
+    "Bytes": 768167
+  },
+  {
+    "File": "02_front_check.png",
+    "Width": 900,
+    "Height": 675,
+    "Bytes": 775444
+  },
+  {
+    "File": "03_aerial_check.png",
+    "Width": 900,
+    "Height": 675,
+    "Bytes": 767837
+  },
+  {
+    "File": "04_interior.png",
+    "Width": 1800,
+    "Height": 1350,
+    "Bytes": 2334809
+  }
+]

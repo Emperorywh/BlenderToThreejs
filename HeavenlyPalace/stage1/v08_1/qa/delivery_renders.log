@@ -1,0 +1,13 @@
+00:01.843  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08_1.blend"
+00:34.515  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\preview_01_oblique.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08_1\\qa\\preview_01_oblique.png", "camera": "CAM_01_整体斜视_55mm", "engine": "CYCLES", "device": "CPU", "resolution": [900, 675], "samples": 16, "denoising": true, "seconds": 31.81, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"}
+01:08.343  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\preview_02_front.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08_1\\qa\\preview_02_front.png", "camera": "CAM_02_正面_正交比例校核", "engine": "CYCLES", "device": "CPU", "resolution": [900, 675], "samples": 16, "denoising": true, "seconds": 33.85, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"}
+01:45.656  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\qa\preview_03_aerial.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08_1\\qa\\preview_03_aerial.png", "camera": "CAM_03_鸟瞰_50mm", "engine": "CYCLES", "device": "CPU", "resolution": [900, 675], "samples": 16, "denoising": true, "seconds": 37.28, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"}
+06:13.000  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08_1\renders\04_interior.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08_1\\renders\\04_interior.png", "camera": "CAM_04_殿内望云_v08_1", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 64, "denoising": true, "seconds": 267.33, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"}
+V08_1_DELIVERY_RENDERS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
