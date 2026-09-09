@@ -1,0 +1,9 @@
+# 依赖由各项目的锁文件恢复，禁止把依赖目录和链接加入源码提交。
+# 构建产物、日志与资源导出中间记录均可重新生成。
+**/node_modules/
+**/dist/
+web-assets-v01/build/
+web-assets-v01/qa/
+*.log
+**/__pycache__/
+*.pyc

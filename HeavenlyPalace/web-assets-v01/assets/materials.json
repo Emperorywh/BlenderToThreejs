@@ -1,0 +1,526 @@
+{
+  "materials": [
+    {
+      "id": "m00",
+      "source": "V08_古松树皮_纵裂苍褐",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": true,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m00_basecolor.png",
+        "orm": "m00_orm.png",
+        "normal": "m00_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_古松树皮_纵裂苍褐",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8799999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m01",
+      "source": "V08_哑金_脊线与细金饰",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m01_basecolor.png",
+        "orm": "m01_orm.png",
+        "normal": "m01_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_哑金_脊线与细金饰",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.7799999713897705
+    },
+    {
+      "id": "m02",
+      "source": "V08_山岩_干面裂隙苔色与湿岸",
+      "size": 1024,
+      "tile_m": 16,
+      "vertical": true,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m02_basecolor.png",
+        "orm": "m02_orm.png",
+        "normal": "m02_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_山岩_干面裂隙苔色与湿岸",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8399999737739563,
+      "metallic": 0.0
+    },
+    {
+      "id": "m03",
+      "source": "V08_朱红木构_顺x轴",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m03_basecolor.png",
+        "orm": "m03_orm.png",
+        "normal": "m03_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_朱红木构_顺x轴",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m04",
+      "source": "V08_朱红木构_顺y轴",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m04_basecolor.png",
+        "orm": "m04_orm.png",
+        "normal": "m04_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_朱红木构_顺y轴",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m05",
+      "source": "V08_朱红木构_顺z轴",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": true,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m05_basecolor.png",
+        "orm": "m05_orm.png",
+        "normal": "m05_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_朱红木构_顺z轴",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m08",
+      "source": "V08_松针_深绿",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m08_basecolor.png",
+        "orm": "m08_orm.png",
+        "normal": "m08_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_松针_深绿",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.6299999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m09",
+      "source": "V08_瀑布_流向水纹白沫与入云消隐",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": true,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m09_basecolor.png",
+        "orm": "m09_orm.png",
+        "normal": "m09_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_Waterfall_Static_Preview",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.18000000715255737,
+      "metallic": 0.0
+    },
+    {
+      "id": "m10",
+      "source": "V08_白玉_台基石构",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m10_basecolor.png",
+        "orm": "m10_orm.png",
+        "normal": "m10_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_白玉_台基石构",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.4699999988079071,
+      "metallic": 0.0
+    },
+    {
+      "id": "m11",
+      "source": "V08_白玉_室外四米石板",
+      "size": 1024,
+      "tile_m": 8,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m11_basecolor.png",
+        "orm": "m11_orm.png",
+        "normal": "m11_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_白玉_室外四米石板",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0
+    },
+    {
+      "id": "m12",
+      "source": "V08_白玉_柱身栏杆",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m12_basecolor.png",
+        "orm": "m12_orm.png",
+        "normal": "m12_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_白玉_柱身栏杆",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.0
+    },
+    {
+      "id": "m13",
+      "source": "V08_藻井_朱漆金线回纹",
+      "size": 1024,
+      "tile_m": 1,
+      "vertical": false,
+      "ceiling": true,
+      "roof": false,
+      "files": {
+        "basecolor": "m13_basecolor.png",
+        "orm": "m13_orm.png",
+        "normal": "m13_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_藻井_朱漆金线回纹",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.4000000059604645,
+      "metallic": 0.0
+    },
+    {
+      "id": "m14",
+      "source": "V08_远山_空气透视_1",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m14_basecolor.png",
+        "orm": "m14_orm.png",
+        "normal": "m14_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_远山_空气透视_1",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.9599999785423279,
+      "metallic": 0.0
+    },
+    {
+      "id": "m15",
+      "source": "V08_远山_空气透视_2",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m15_basecolor.png",
+        "orm": "m15_orm.png",
+        "normal": "m15_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_远山_空气透视_2",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.9599999785423279,
+      "metallic": 0.0
+    },
+    {
+      "id": "m16",
+      "source": "V08_远山_空气透视_3",
+      "size": 512,
+      "tile_m": 4,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m16_basecolor.png",
+        "orm": "m16_orm.png",
+        "normal": "m16_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_远山_空气透视_3",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.9599999785423279,
+      "metallic": 0.0
+    },
+    {
+      "id": "m17",
+      "source": "V08_青绿琉璃瓦_分行釉面",
+      "size": 1024,
+      "tile_m": 9.92,
+      "vertical": false,
+      "ceiling": false,
+      "roof": true,
+      "files": {
+        "basecolor": "m17_basecolor.png",
+        "orm": "m17_orm.png",
+        "normal": "m17_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V08_青绿琉璃瓦_分行釉面",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.36000001430511475,
+      "metallic": 0.0
+    },
+    {
+      "id": "m18",
+      "source": "V09_人物_发髻与鞋",
+      "files": {},
+      "tile_m": 4,
+      "name": "WEB_V09_人物_发髻与鞋",
+      "base_factor": [
+        0.012000000104308128,
+        0.008999999612569809,
+        0.007000000216066837,
+        1.0
+      ],
+      "roughness": 0.6299999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m19",
+      "source": "V09_人物_肤色",
+      "files": {},
+      "tile_m": 4,
+      "name": "WEB_V09_人物_肤色",
+      "base_factor": [
+        0.36000001430511475,
+        0.2150000035762787,
+        0.12999999523162842,
+        1.0
+      ],
+      "roughness": 0.6000000238418579,
+      "metallic": 0.0
+    },
+    {
+      "id": "m20",
+      "source": "V09_白玉地坪_四米大板与柔和反射",
+      "size": 1024,
+      "tile_m": 8,
+      "vertical": false,
+      "ceiling": false,
+      "roof": false,
+      "files": {
+        "basecolor": "m20_basecolor.png",
+        "orm": "m20_orm.png",
+        "normal": "m20_normal.png"
+      },
+      "base_color": "sRGB; emission bake; no direct light/highlights/AO",
+      "normal": "Non-Color; tangent +Y",
+      "orm": "Non-Color; R=1 (no baked scene AO), G=roughness, B=metallic",
+      "name": "WEB_V09_白玉地坪_四米大板与柔和反射",
+      "base_factor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.2549999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m21",
+      "source": "V09_藻井黛青底漆",
+      "files": {},
+      "tile_m": 4,
+      "name": "WEB_V09_藻井黛青底漆",
+      "base_factor": [
+        0.012000000104308128,
+        0.054999999701976776,
+        0.04699999839067459,
+        1.0
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.0
+    },
+    {
+      "id": "m22",
+      "source": "V09_长袍_墨青织物",
+      "files": {},
+      "tile_m": 4,
+      "name": "WEB_V09_长袍_墨青织物",
+      "base_factor": [
+        0.01899999938905239,
+        0.050999999046325684,
+        0.05700000002980232,
+        1.0
+      ],
+      "roughness": 0.7799999713897705,
+      "metallic": 0.0
+    },
+    {
+      "id": "m23",
+      "source": "V09_长袍_灰青领缘",
+      "files": {},
+      "tile_m": 4,
+      "name": "WEB_V09_长袍_灰青领缘",
+      "base_factor": [
+        0.09000000357627869,
+        0.14499999582767487,
+        0.14000000059604645,
+        1.0
+      ],
+      "roughness": 0.6600000262260437,
+      "metallic": 0.0
+    }
+  ],
+  "notes": [
+    "基础色使用 sRGB，其余数据贴图使用 Non-Color。",
+    "ORM 的 R 通道为 1；本轮未烘焙场景 AO。",
+    "柱身 ReliefUV 使用第二套 UV；共享玉石使用第一套 UV。"
+  ]
+}

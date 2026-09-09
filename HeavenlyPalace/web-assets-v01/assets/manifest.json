@@ -1,0 +1,1794 @@
+{
+  "version": "v01",
+  "unit": "meter",
+  "coordinate_system": "glTF Y-up; x,z,-y; common origin",
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "compression": "EXT_meshopt_compression; lossless float data; shared PNG textures",
+  "source_blend": "HeavenlyPalace_WebAssets_v01.blend",
+  "files": [
+    {
+      "file": "architecture.glb",
+      "bytes": 27518880,
+      "sha256": "07b7c9da99882664f662e998b700e3926449fff9eea556d64aa2552e6131f1c8",
+      "nodes": 351,
+      "meshes": 223,
+      "materials": 12,
+      "textures": 31,
+      "instance_groups": [
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭侧护栏_-1_素面望柱_000_共享网格.002",
+          "count": 60,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭侧护栏_-1_素面望柱_000_共享网格.002",
+          "count": 133,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭侧护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭侧护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭侧护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭侧护栏_-1_竖梃_000_1_共享网格.002",
+          "count": 174,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭侧护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭侧护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭侧护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭侧护栏_-1_竖梃_000_1_共享网格.002",
+          "count": 381,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_月门前沿护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_月门前沿护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_月门前沿护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭侧护栏_-1_素面望柱_000_共享网格.002",
+          "count": 60,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭侧护栏_-1_素面望柱_000_共享网格.002",
+          "count": 181,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭侧护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭侧护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭侧护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 34,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭侧护栏_-1_竖梃_000_1_共享网格.002",
+          "count": 174,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭侧护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭侧护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭侧护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭侧护栏_-1_竖梃_000_1_共享网格.002",
+          "count": 522,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_月门前沿护栏_1_横档_000_1.37_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_月门前沿护栏_1_横档_000_0.35_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_月门前沿护栏_1_横档_000_0.78_共享网格.002",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1前缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1前缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1前缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_005_1.37_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_005_0.35_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基1边缘护栏_-1_横档_005_0.78_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1前缘护栏_1_横档_000_1.37_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1前缘护栏_1_横档_000_0.35_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1前缘护栏_1_横档_000_0.78_共享网格.002",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_005_1.37_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_005_0.35_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基1边缘护栏_-1_横档_005_0.78_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2前缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2前缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2前缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基2边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2前缘护栏_1_横档_000_1.37_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2前缘护栏_1_横档_000_0.35_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2前缘护栏_1_横档_000_0.78_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基2边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3前缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3前缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3前缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_台基3边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3前缘护栏_1_横档_000_1.37_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3前缘护栏_1_横档_000_0.35_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3前缘护栏_1_横档_000_0.78_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3边缘护栏_-1_横档_000_1.37_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3边缘护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_台基3边缘护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_WEB_巨柱_96边_共享法线.001",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_WEB_巨柱_96边_共享法线.001",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_主殿巨柱_列1_进1_方形础座_网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V09__覆盆柱础_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V09__柱脚束口_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V09__承梁柱头_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_主殿巨柱_列1_进1_方形础座_网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V09__覆盆柱础_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V09__柱脚束口_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V09__承梁柱头_128边共享.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_主梁边线_Y245.00_-1_82.28_网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_纵枋边线_-90.0_-1_网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_纵枋边线_-90.0_-1_网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_柱间额枋_245_-90.0_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_额枋素面芯板_245_-90.0_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_柱间额枋_245_-90.0_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_额枋素面芯板_245_-90.0_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_天花浅凹板_1_1_网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_天花边框横_0_0_-1_网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_天花边框纵_0_0_-1_网格.002",
+          "count": 15,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_天花浅凹板_3_1_网格.002",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_天花边框横_2_0_-1_网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_天花边框纵_0_0_-1_网格.002",
+          "count": 15,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_天花浅凹板_1_1_网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_天花边框横_0_0_-1_网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_下檐斗拱_01_网格.002",
+          "count": 17,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_下檐斗拱_01_网格.002",
+          "count": 19,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V05_屋架瓜柱_-60_-25_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V05_屋架瓜柱_-60_-25_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_入口中央门厅_跨进深梁_-30_共享网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_入口中央门厅_跨进深梁_-30_共享网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_V06_入口门厅檐柱_-30_-202.0_础座_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_V06_入口门厅檐柱_-30_-202.0_覆盆柱础_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_V06_入口门厅檐柱_-30_-202.0_柱头_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_V06_入口门厅檐柱_-30_-202.0_础座_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_V06_入口门厅檐柱_-30_-202.0_覆盆柱础_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_V06_入口门厅檐柱_-30_-202.0_柱头_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_入口翼廊_-1_柱头斗拱_-45_-202.0_共享网格.002",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_入口翼廊_-1_屋架瓜柱_1_0_共享网格.002",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_月门侧长廊柱_-1_45_-202.0_柱身_网格.002",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_入口翼廊_-1_柱头斗拱_-45_-202.0_共享网格.002",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_入口翼廊_-1_屋架瓜柱_1_0_共享网格.002",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_月门侧长廊柱_-1_45_-202.0_柱身_网格.002",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊_-1_共享椽_-1_000_共享网格.002",
+          "count": 70,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊_-1_共享椽_-1_000_共享网格.002",
+          "count": 62,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊_-1_共享椽_1_000_共享网格.002",
+          "count": 70,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊_-1_共享椽_1_000_共享网格.002",
+          "count": 62,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊_-1_通长檩_-12.3_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊跨通道梁_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊檐柱斗拱_-1_-1_-133_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊柱头承檩_-1_-1_-133_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊脊下瓜柱_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊主椽承架_-1_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_回廊主椽承架_-1_1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊跨通道梁_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊檐柱斗拱_-1_-1_-133_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊柱头承檩_-1_-1_-133_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊脊下瓜柱_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊主椽承架_-1_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_回廊主椽承架_-1_1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊柱_-1_-1_-133_础座_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊柱_-1_-1_-133_覆盆柱础_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊柱_-1_-1_-133_柱头_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_侧回廊柱_-1_-1_-133_柱身_网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊柱_-1_-1_-133_础座_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊柱_-1_-1_-133_覆盆柱础_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊柱_-1_-1_-133_柱头_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_侧回廊柱_-1_-1_-133_柱身_网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊_-1_共享椽_-1_000_共享网格.002",
+          "count": 70,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊_-1_共享椽_-1_000_共享网格.002",
+          "count": 62,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊_-1_共享椽_1_000_共享网格.002",
+          "count": 70,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊_-1_共享椽_1_000_共享网格.002",
+          "count": 62,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊_-1_通长檩_-12.3_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊跨通道梁_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊檐柱斗拱_-1_-1_-133_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊柱头承檩_-1_-1_-133_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊脊下瓜柱_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊主椽承架_-1_-1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_回廊主椽承架_-1_1_-133_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊跨通道梁_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊檐柱斗拱_-1_-1_-133_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊柱头承檩_-1_-1_-133_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊脊下瓜柱_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊主椽承架_-1_-1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_回廊主椽承架_-1_1_-133_共享网格.002",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊柱_-1_-1_-133_础座_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊柱_-1_-1_-133_覆盆柱础_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊柱_-1_-1_-133_柱头_共享网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_侧回廊柱_-1_-1_-133_柱身_网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊柱_-1_-1_-133_础座_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊柱_-1_-1_-133_覆盆柱础_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊柱_-1_-1_-133_柱头_共享网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_侧回廊柱_-1_-1_-133_柱身_网格.002",
+          "count": 14,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_柱头斗拱_-139.0_-166.0_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_檐柱上承_-139.0_-166.0_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_角柱_-1_-1_础座_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_角柱_-1_-1_覆盆柱础_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_角柱_-1_-1_柱头_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_前庭角亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_柱头斗拱_-139.0_-166.0_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_檐柱上承_-139.0_-166.0_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_角柱_-1_-1_础座_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_角柱_-1_-1_覆盆柱础_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_角柱_-1_-1_柱头_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_前庭角亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭角亭_-1_柱头斗拱_-139.0_-166.0_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭后角亭_-1_檐柱上承_-139.0_128.0_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭角亭_-1_角柱_-1_-1_础座_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭角亭_-1_角柱_-1_-1_覆盆柱础_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭角亭_-1_角柱_-1_-1_柱头_共享网格.002",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_前庭后角亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭角亭_-1_柱头斗拱_-139.0_-166.0_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭后角亭_-1_檐柱上承_-139.0_128.0_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭角亭_-1_角柱_-1_-1_础座_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭角亭_-1_角柱_-1_-1_覆盆柱础_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭角亭_-1_角柱_-1_-1_柱头_共享网格.002",
+          "count": 12,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_前庭后角亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_上庭侧亭_-1_檐柱上承_-139.5_171.5_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_上庭侧亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_上庭侧亭_-1_檐柱上承_-139.5_171.5_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_上庭侧亭_-1_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_中轴第1段_升高12米_侧墙薄压顶_-1_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_中轴第1段_升高12米_侧面腰线_-1_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_中轴第1段_升高12米_侧墙薄压顶_-1_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_中轴第1段_升高12米_侧面腰线_-1_共享网格.002",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧观景亭_檐柱上承_301.0_188.0_短柱_共享网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧观景亭_角柱_-1_-1_柱身_网格.002",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧桥护栏_-1_素面望柱_000_共享网格.002",
+          "count": 42,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧桥护栏_-1_横档_000_1.47_共享网格.002",
+          "count": 38,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧桥护栏_-1_横档_000_0.35_共享网格.002",
+          "count": 38,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧桥护栏_-1_横档_000_0.78_共享网格.002",
+          "count": 38,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东侧桥护栏_-1_竖梃_000_1_共享网格.002",
+          "count": 118,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台东护栏_横档_000_1.37_共享网格.002",
+          "count": 13,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台东护栏_横档_000_0.35_共享网格.002",
+          "count": 13,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台东护栏_横档_000_0.78_共享网格.002",
+          "count": 13,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_000_1.37_共享网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_000_0.35_共享网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_000_0.78_共享网格.002",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_001_1.37_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_001_0.35_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_东平台南护栏_横档_001_0.78_共享网格.002",
+          "count": 18,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西南缘补全_横档_000_1.37_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西南缘补全_横档_000_0.35_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西南缘补全_横档_000_0.78_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西北缘补全_横档_000_1.37_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西北缘补全_横档_000_0.35_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_观景台西北缘补全_横档_000_0.78_共享网格.002",
+          "count": 5,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_横梁黛青芯板_网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_横梁金线_网格.002",
+          "count": 32,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_横梁黛青芯板_网格.003",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_横梁金线_网格.003",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_横梁黛青芯板_网格.002",
+          "count": 16,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_横梁金线_网格.002",
+          "count": 32,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收横框_网格.006",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收纵框_网格.003",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收横框_网格.007",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收纵框_网格.004",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收横框_网格.008",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收纵框_网格.005",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内芯黛青底_网格.002",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收横框_网格.009",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收纵框_网格.003",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收横框_网格.010",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收纵框_网格.004",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_藻井内收横框_网格.011",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收纵框_网格.005",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内芯黛青底_网格.003",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收横框_网格.006",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收横框_网格.007",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内收横框_网格.008",
+          "count": 6,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_藻井内芯黛青底_网格.002",
+          "count": 3,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_V09_莲心瓦当_共享.001",
+          "count": 552,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_V09_莲心瓦当_共享.001",
+          "count": 552,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_主脊分节压顶_网格.001",
+          "count": 20,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_主脊分节压顶_网格.001",
+          "count": 21,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, -1)_亭廊正脊分节细箍_网格.001",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, -1)_亭廊正脊分节细箍_网格.001",
+          "count": 26,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(-1, 0)_亭廊正脊分节细箍_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_architecture_(0, 0)_亭廊正脊分节细箍_网格.001",
+          "count": 12,
+          "primitives": 1
+        }
+      ],
+      "instances": 6292
+    },
+    {
+      "file": "terrain.glb",
+      "bytes": 11025544,
+      "sha256": "5fd6e76e1dc60aeaee034355a022a1c93a9878cde7a8521facb17fae2dbd8946",
+      "nodes": 130,
+      "meshes": 130,
+      "materials": 4,
+      "textures": 12,
+      "instance_groups": [],
+      "instances": 0
+    },
+    {
+      "file": "vegetation.glb",
+      "bytes": 2117184,
+      "sha256": "ebb78cc8fd961efab6d0c0d52c2494e7d0f9628f36e842b05b7aab7ff4150e5b",
+      "nodes": 52,
+      "meshes": 22,
+      "materials": 2,
+      "textures": 6,
+      "instance_groups": [
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_04_网格.001",
+          "count": 26,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_05_网格.001",
+          "count": 24,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_06_网格.001",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_07_网格.001",
+          "count": 24,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_08_网格.001",
+          "count": 24,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_09_网格.001",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_00_网格.001",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_01_网格.001",
+          "count": 30,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_02_网格.001",
+          "count": 26,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, 0)_V08_针叶簇共享_03_网格.001",
+          "count": 28,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_01_网格.001",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_02_网格.001",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_03_网格.001",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_04_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_05_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_06_网格.001",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_07_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_08_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_09_网格.001",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, -1)_V08_针叶簇共享_00_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_02_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_03_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_04_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_05_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_06_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_07_网格.001",
+          "count": 11,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_08_网格.001",
+          "count": 10,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_09_网格.001",
+          "count": 9,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_00_网格.001",
+          "count": 7,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(0, -1)_V08_针叶簇共享_01_网格.001",
+          "count": 8,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_03_网格.001",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_04_网格.001",
+          "count": 26,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_05_网格.001",
+          "count": 25,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_06_网格.001",
+          "count": 27,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_07_网格.001",
+          "count": 27,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_08_网格.001",
+          "count": 29,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_09_网格.001",
+          "count": 27,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_00_网格.001",
+          "count": 27,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_01_网格.001",
+          "count": 29,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_vegetation_(-1, 0)_V08_针叶簇共享_02_网格.001",
+          "count": 26,
+          "primitives": 1
+        }
+      ],
+      "instances": 706
+    },
+    {
+      "file": "characters.glb",
+      "bytes": 387456,
+      "sha256": "e8469b7e7041e23978315b6ae24bd870a3d9700de8940e953f4c9343c02fc6e3",
+      "nodes": 36,
+      "meshes": 20,
+      "materials": 4,
+      "textures": 0,
+      "instance_groups": [
+        {
+          "name": "INSTANCE_characters_(0, 0)_人物01_手_共享.001",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_characters_(0, 0)_人物01_鞋面_共享.001",
+          "count": 4,
+          "primitives": 1
+        },
+        {
+          "name": "INSTANCE_characters_(0, 0)_人物01_平底鞋底_网格.001",
+          "count": 4,
+          "primitives": 1
+        }
+      ],
+      "instances": 12
+    },
+    {
+      "file": "waterfalls.glb",
+      "bytes": 1001264,
+      "sha256": "f4352668ac9ae810c52bf271d42629d8ec78b251952b7bfcb9fdc2627182de5f",
+      "nodes": 4,
+      "meshes": 4,
+      "materials": 1,
+      "textures": 3,
+      "instance_groups": [],
+      "instances": 0
+    }
+  ],
+  "pending_effects": [
+    "远景云海",
+    "近岛云雾",
+    "入口五团遮檐云",
+    "瀑布水雾和动画"
+  ],
+  "camera_file": "cameras.json",
+  "environment_file": "environment-layout.json",
+  "textures": [
+    {
+      "file": "textures/column_relief_normal.png",
+      "bytes": 950548,
+      "sha256": "6cd99965a4ec804a189fe3a0e5ac3ecb8a309b06dfdb9069b4985831f2ec7850"
+    },
+    {
+      "file": "textures/m00_basecolor.png",
+      "bytes": 185724,
+      "sha256": "1fe974fb2093896c3e707b4003c3519cb9937a297249f457ea5d9de4ed2bfcbc"
+    },
+    {
+      "file": "textures/m00_normal.png",
+      "bytes": 501958,
+      "sha256": "8c2a670ad0b4fc48f2a12b7ba773c10a78527e29e949347904a8efd3b04b154d"
+    },
+    {
+      "file": "textures/m00_orm.png",
+      "bytes": 4588,
+      "sha256": "3c19cd517d8c3b516bafe21c0351729da180a44760e53e6a78efdc7b09d3d264"
+    },
+    {
+      "file": "textures/m01_basecolor.png",
+      "bytes": 345992,
+      "sha256": "8ccb6eac428415f826e265775a9b1669620478f5c143197f56de0e2da0caaaed"
+    },
+    {
+      "file": "textures/m01_normal.png",
+      "bytes": 41003,
+      "sha256": "dd11c0868ab5523b01f68bf7e38981fdb0b4b515d123820b42416e8dc309bde8"
+    },
+    {
+      "file": "textures/m01_orm.png",
+      "bytes": 202866,
+      "sha256": "f5f2eebb8fbf6ff154d1eca61731f08c6035b695e489078a890dc1556c7e170d"
+    },
+    {
+      "file": "textures/m02_basecolor.png",
+      "bytes": 412956,
+      "sha256": "73a5dc440a3931a6c38392fec9a5a11d51094c18935ec6db3fb19f41a1eead5d"
+    },
+    {
+      "file": "textures/m02_normal.png",
+      "bytes": 1900807,
+      "sha256": "a2bf922b20f1f7b1c0705f4f4bd77c543309ee3cc27a8e54c0717fd6e56d90e5"
+    },
+    {
+      "file": "textures/m02_orm.png",
+      "bytes": 15960,
+      "sha256": "8763f9bf3b2355ab40ab3790832015efab429c185963a8af17b86072b99439ff"
+    },
+    {
+      "file": "textures/m03_basecolor.png",
+      "bytes": 175458,
+      "sha256": "bda25c42f57f74934e751a3598a26c6c99db874a1bc943180665ae8029facea7"
+    },
+    {
+      "file": "textures/m03_normal.png",
+      "bytes": 63447,
+      "sha256": "84155d68e7b8eda6cfb6240c27f1caeab7eca23f16d80f4127fb2f00db1335ef"
+    },
+    {
+      "file": "textures/m03_orm.png",
+      "bytes": 66193,
+      "sha256": "5762c6a8ea368ac59c3251763bef03c47c7d2668723f674d513ab9eed85abca3"
+    },
+    {
+      "file": "textures/m04_basecolor.png",
+      "bytes": 174043,
+      "sha256": "e1884c9a4b3f0bb50b3c9540fd4eaeedc36b99096b8fc7481d501069f96ffe2b"
+    },
+    {
+      "file": "textures/m04_normal.png",
+      "bytes": 66304,
+      "sha256": "6cbb9868ae05873a9979d4d8d6fc30bcadf69f8d438c7d2f20685edf800b5c38"
+    },
+    {
+      "file": "textures/m04_orm.png",
+      "bytes": 64368,
+      "sha256": "e8c9e69289a102aba8aedca6ed5fcafeffd0f7c70132c7d00f69b0f4fba661e1"
+    },
+    {
+      "file": "textures/m05_basecolor.png",
+      "bytes": 171686,
+      "sha256": "fe28ef22c831e849de723be1fcdbe119aa496c036acaf8d6cdc20618030c31b2"
+    },
+    {
+      "file": "textures/m05_normal.png",
+      "bytes": 65650,
+      "sha256": "a9befdefc0a9faf4cf1d89a949a0edf0842c053d825aed0bf42b0716dbdb2d57"
+    },
+    {
+      "file": "textures/m05_orm.png",
+      "bytes": 63434,
+      "sha256": "bb320a5d8df167600a58624e95172489037d8c4e69444f8dab61ff3e69c0336a"
+    },
+    {
+      "file": "textures/m08_basecolor.png",
+      "bytes": 99137,
+      "sha256": "195332e9d376657ae6e37b1bb3dc627d48ed5ba7300656a6e9d2ab4dfa6d145f"
+    },
+    {
+      "file": "textures/m08_normal.png",
+      "bytes": 4588,
+      "sha256": "3b8dfb8c3b14effa2ec38e69ef1a4882de1fa69c367859e73cbedef159afbe90"
+    },
+    {
+      "file": "textures/m08_orm.png",
+      "bytes": 4588,
+      "sha256": "5eda976f76b9625de59f4238dc9fd5215dac90319ebb59fce4afff13352c66fa"
+    },
+    {
+      "file": "textures/m09_basecolor.png",
+      "bytes": 216524,
+      "sha256": "1e355dacfcf82b52be88d215e775489be01a11d59b4098901a8011f27b143dea"
+    },
+    {
+      "file": "textures/m09_normal.png",
+      "bytes": 198575,
+      "sha256": "467b1ce3f7aa4f544660e2ed499f0e45e4cfe2b2318a8f7eb1d462974a3eced4"
+    },
+    {
+      "file": "textures/m09_orm.png",
+      "bytes": 4588,
+      "sha256": "cd7da56cd442b02a8e63abf6442c1fef723615f397c4d61bb4ce374cb8e9af6b"
+    },
+    {
+      "file": "textures/m10_basecolor.png",
+      "bytes": 186909,
+      "sha256": "2df51fc060edda4a9c2ce9523a1a8763c5343761cfb9c6b472d9640f5facb80c"
+    },
+    {
+      "file": "textures/m10_normal.png",
+      "bytes": 306905,
+      "sha256": "e54b22da315de8b12ee7606c297b8d13ae294e336195003ac5790a31ce63cf21"
+    },
+    {
+      "file": "textures/m10_orm.png",
+      "bytes": 4587,
+      "sha256": "e707cbdccfedfb8db0ed7dfdfa8a48f6886f841872f4f9a08abe60298606a3f3"
+    },
+    {
+      "file": "textures/m11_basecolor.png",
+      "bytes": 379308,
+      "sha256": "c83a229d9c179331918fa108e93e8746bac553b715ea8823a93d814b848db99b"
+    },
+    {
+      "file": "textures/m11_normal.png",
+      "bytes": 1212173,
+      "sha256": "2574044404464048f5237a6bac0a6066f3ffabd5e2f04232fa76861a11bd1db3"
+    },
+    {
+      "file": "textures/m11_orm.png",
+      "bytes": 15959,
+      "sha256": "7f2f88e5ec70f4610cdf3346e1a2159562fe96b2ecb979427e2566dd9c673ce5"
+    },
+    {
+      "file": "textures/m12_basecolor.png",
+      "bytes": 186909,
+      "sha256": "2df51fc060edda4a9c2ce9523a1a8763c5343761cfb9c6b472d9640f5facb80c"
+    },
+    {
+      "file": "textures/m12_normal.png",
+      "bytes": 299982,
+      "sha256": "482088cba0e63e4d198fe820049b813055e2a4f3224dbddc41038163912a3623"
+    },
+    {
+      "file": "textures/m12_orm.png",
+      "bytes": 4588,
+      "sha256": "618cc129df4f2532dfe30b887178d9dccb46022b0864e8d38af546d0dc5d7312"
+    },
+    {
+      "file": "textures/m13_basecolor.png",
+      "bytes": 77606,
+      "sha256": "66c6782a7dd40b388aa8885eed54b2088e41719a85d9703b91df8c007ec68b12"
+    },
+    {
+      "file": "textures/m13_normal.png",
+      "bytes": 74193,
+      "sha256": "c7dab80ffc2a08259e1d2eecb8dcb062e94b7d4cdc7b594288e1438b218d12f4"
+    },
+    {
+      "file": "textures/m13_orm.png",
+      "bytes": 72529,
+      "sha256": "8f5696c048893928ab1d5bf1f2cf668031247507f9cf909abf46cf9139c7ae60"
+    },
+    {
+      "file": "textures/m14_basecolor.png",
+      "bytes": 12669,
+      "sha256": "0c13b5afbd860b361f34a00c5f90e526e7f258f07344551565cd8449f5259123"
+    },
+    {
+      "file": "textures/m14_normal.png",
+      "bytes": 4588,
+      "sha256": "3b8dfb8c3b14effa2ec38e69ef1a4882de1fa69c367859e73cbedef159afbe90"
+    },
+    {
+      "file": "textures/m14_orm.png",
+      "bytes": 4588,
+      "sha256": "5e303fcb0f9d8ba3b90b70ea88318ad3187336a3096fb193923479ebfa568989"
+    },
+    {
+      "file": "textures/m15_basecolor.png",
+      "bytes": 12852,
+      "sha256": "e650be11cb435e71beebf10f3570c1db5addfef97b52727b0140f3c32bae0c0c"
+    },
+    {
+      "file": "textures/m15_normal.png",
+      "bytes": 4588,
+      "sha256": "3b8dfb8c3b14effa2ec38e69ef1a4882de1fa69c367859e73cbedef159afbe90"
+    },
+    {
+      "file": "textures/m15_orm.png",
+      "bytes": 4588,
+      "sha256": "5e303fcb0f9d8ba3b90b70ea88318ad3187336a3096fb193923479ebfa568989"
+    },
+    {
+      "file": "textures/m16_basecolor.png",
+      "bytes": 13758,
+      "sha256": "f621813f7b1f9012c59287aa549b5c8d6d348cb60916da353936a998548b99f6"
+    },
+    {
+      "file": "textures/m16_normal.png",
+      "bytes": 4588,
+      "sha256": "3b8dfb8c3b14effa2ec38e69ef1a4882de1fa69c367859e73cbedef159afbe90"
+    },
+    {
+      "file": "textures/m16_orm.png",
+      "bytes": 4588,
+      "sha256": "5e303fcb0f9d8ba3b90b70ea88318ad3187336a3096fb193923479ebfa568989"
+    },
+    {
+      "file": "textures/m17_basecolor.png",
+      "bytes": 743067,
+      "sha256": "68f8437a27f5e9cb76f17c68c0b972b21a690afe1f2ea6d4d74b25902854dd0d"
+    },
+    {
+      "file": "textures/m17_normal.png",
+      "bytes": 327307,
+      "sha256": "c427c8f456a67f9d150da6e0d6e5985e5f456a60572c785ad376b02f6a75e0b4"
+    },
+    {
+      "file": "textures/m17_orm.png",
+      "bytes": 15960,
+      "sha256": "03b2e47a3fbcd901381188ec5f935d762eb39d3f2357174cab1daba101157bd1"
+    },
+    {
+      "file": "textures/m20_basecolor.png",
+      "bytes": 408706,
+      "sha256": "dd7016d4b23ffc71db454b77b48efb50842fd6983f02423f24716793b6dfa364"
+    },
+    {
+      "file": "textures/m20_normal.png",
+      "bytes": 1203837,
+      "sha256": "6d63d0972c047af1c89b07e43ce8970a604f2db292dd426726395e8ac10b4ed2"
+    },
+    {
+      "file": "textures/m20_orm.png",
+      "bytes": 127366,
+      "sha256": "3e2bc2a5eb78388d47ba984879164894f2896bee13a18d5e3c214f9da94ec63b"
+    }
+  ],
+  "textureCompressionDecision": "当前保留 GLB 实际引用的共享 PNG；尚未确认纹理是首要瓶颈，后续按系统浏览器实测决定 KTX2。",
+  "material_file": "materials.json"
+}
