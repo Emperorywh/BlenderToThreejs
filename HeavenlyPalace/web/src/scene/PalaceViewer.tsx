@@ -1,218 +1,205 @@
-/* 固定机位通过导出的完整投影矩阵还原，画面始终保持四比三和 DPR 一。
- * 模型、相机及环境均为同一米制原点，加载后不再居中或旋转模型。 */
+/* 天宫首页以全屏游览为主，场景、导航和辅助面板各自承担明确职责。
+ * 所有按钮均连接真实状态，加载失败、触屏操作及键盘操作有对应反馈。 */
 import { useEffect, useRef, useState } from 'react'
-import * as THREE from 'three'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js'
-import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js'
+import type { PalaceScene } from './createPalaceScene'
+import { views } from './views'
 
-/* 为相机文件、加载状态和页面控制提供明确类型，沿用项目的严格类型检查。
- * 页面保留运行所需状态，不包含截图采样、测试记录或诊断开关。 */
-interface CameraRecord {
-  name: string
-  projection_type: 'ORTHO' | 'PERSP'
-  orthographic_width: number | null
-  orthographic_height: number | null
-  near: number
-  far: number
-  vertical_fov_degrees: number | null
-  world_matrix: number[]
-  projection_matrix: number[]
-  direction: [number, number, number]
-}
-interface CameraFile { cameras: CameraRecord[] }
-interface ManifestFile {
-  files: { file: string; bytes: number }[]
-  textures: { file: string; bytes: number }[]
-  compression: string
-}
-interface Metrics {
-  fps: number
-  calls: number
-  triangles: number
-  instances: number
-  instanceGroups: number
-  textures: number
-  firstRenderedMilliseconds: number
-}
-interface ViewerAPI {
-  selectCamera: (index: number, orbit?: boolean) => void
+/* 图标采用本地矢量线条，与页面的细线装饰保持一致。
+ * 图形只作辅助，操作名称由按钮文字和无障碍标签提供。 */
+function Icon({ name }: { name: 'play' | 'pause' | 'reset' | 'plus' | 'minus' | 'expand' | 'close' | 'settings' | 'help' | 'eye' | 'arrow' | 'mouse' }) {
+  const paths = {
+    play: 'm9 5 11 7-11 7Z', pause: 'M8 5v14M16 5v14', reset: 'M4 10a8 8 0 1 1 1 7M4 4v6h6',
+    plus: 'M5 12h14M12 5v14', minus: 'M5 12h14', expand: 'M9 4H4v5M15 4h5v5M4 15v5h5M20 15v5h-5',
+    close: 'm6 6 12 12M18 6 6 18', settings: 'M4 7h8M16 7h4M4 17h4M12 17h8M12 4v6M8 14v6',
+    help: 'M9 9a3 3 0 1 1 5 2.2c-1.2.6-2 1-2 2.8M12 17h.01', eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Zm10-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6',
+    arrow: 'M4 12h15m-6-6 6 6-6 6', mouse: 'M12 3a6 6 0 0 0-6 6v6a6 6 0 0 0 12 0V9a6 6 0 0 0-6-6Zm0 0v6',
+  }
+  return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={paths[name]} />{name === 'help' && <circle cx="12" cy="12" r="10" />}</svg>
 }
 
-const resourceRoot = import.meta.env.BASE_URL + 'palace-assets/'
-const labels = ['整体斜视', '正面结构', '鸟瞰布局', '殿内望云']
-const number = (n?: number) => Math.round(n || 0).toLocaleString('zh-CN')
-async function readResource<T>(file: string): Promise<T> {
-  const response = await fetch(resourceRoot + file)
-  if (!response.ok) throw new Error(file + ' 无法读取')
-  return response.json()
-}
-
-export default function Viewer() {
-  const host = useRef<HTMLDivElement>(null)
-  const api = useRef<ViewerAPI | null>(null)
-  const [active, setActive] = useState(0)
-  const [free, setFree] = useState(false)
-  const [stats, setStats] = useState(true)
-  const [loading, setLoading] = useState('正在读取资源清单')
-  const [error, setError] = useState('')
-  const [metrics, setMetrics] = useState<Partial<Metrics>>({})
+export default function PalaceViewer() {
+  const host = useRef<HTMLDivElement>(null), shell = useRef<HTMLElement>(null)
+  const api = useRef<PalaceScene | null>(null), dialog = useRef<HTMLDialogElement>(null)
+  const previousImmersive = useRef(false)
+  const [active, setActive] = useState(0), [free, setFree] = useState(false), [tour, setTour] = useState(false)
+  const [ready, setReady] = useState(false), [progress, setProgress] = useState(0), [loading, setLoading] = useState('正在推开云间的门')
+  const [error, setError] = useState(''), [attempt, setAttempt] = useState(0)
+  const [immersive, setImmersive] = useState(false), [fullscreen, setFullscreen] = useState(false)
+  const [panel, setPanel] = useState<'help' | 'settings' | null>(null), [notice, setNotice] = useState('')
+  const [motion, setMotion] = useState(() => !matchMedia('(prefers-reduced-motion: reduce)').matches)
+  const [quality, setQuality] = useState<'balanced' | 'high'>('balanced')
+  const view = views[active], available = ready && !error
 
   useEffect(() => {
-    if (!host.current) return
-    let controls: OrbitControls | undefined, camera: THREE.PerspectiveCamera | THREE.OrthographicCamera | undefined
-    let cameraData: CameraFile | undefined
-    let cancelled = false, raf = 0, freeMode = false
-    const modelRoot = new THREE.Group()
-    let counter = 0, lastUi = performance.now()
-    let instances = 0, instanceGroups = 0, firstRenderedMilliseconds = 0
-    // 使用对数深度保持原相机裁剪面，减轻大尺度屋面与金线的深度冲突。
-    // 资源始终采用完整 PBR 材质与环境光照。
-    const started = performance.now(), renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true, powerPreference: 'high-performance' })
-    renderer.setPixelRatio(1)
-    renderer.setSize(1280, 960, false)
-    renderer.outputColorSpace = THREE.SRGBColorSpace
-    renderer.toneMapping = THREE.ACESFilmicToneMapping
-    renderer.toneMappingExposure = .8
-    host.current.appendChild(renderer.domElement)
-    const scene = new THREE.Scene()
-    scene.background = new THREE.Color('#c7d4dc')
-    const pmrem = new THREE.PMREMGenerator(renderer)
-    const room = new RoomEnvironment()
-    const environment = pmrem.fromScene(room, .04)
-    scene.environment = environment.texture
-    scene.environmentIntensity = .25
-    room.dispose(); pmrem.dispose()
-    scene.add(new THREE.HemisphereLight(0xe0edff, 0x847360, .55))
-    const sunlight = new THREE.DirectionalLight(0xffefd5, 1.8)
-    sunlight.position.set(-300, 600, 400); scene.add(sunlight)
-    scene.add(modelRoot)
-    const manager = new THREE.LoadingManager()
-    manager.onError = url => { if (!cancelled) setError(`资源加载失败：${url}`) }
-    const loader = new GLTFLoader(manager).setMeshoptDecoder(MeshoptDecoder)
-
-    /* 相机局部前方为负 Z，世界变换已经完成坐标转换。
-     * 每次预设切换均恢复完整投影；自由观察使用同样初始光心再开放轨道交互。 */
-    function selectCamera(index: number, orbit = false) {
-      if (!cameraData) return
-      controls?.dispose()
-      freeMode = orbit
-      const data = cameraData.cameras[index]
-      const selectedCamera = data.projection_type === 'ORTHO' ? new THREE.OrthographicCamera(-(data.orthographic_width ?? 1) / 2, (data.orthographic_width ?? 1) / 2, (data.orthographic_height ?? 1) / 2, -(data.orthographic_height ?? 1) / 2, data.near, data.far) : new THREE.PerspectiveCamera(data.vertical_fov_degrees ?? 50, 4 / 3, data.near, data.far)
-      new THREE.Matrix4().fromArray(data.world_matrix).decompose(selectedCamera.position, selectedCamera.quaternion, selectedCamera.scale)
-      // 固定机位直接使用 Blender 的完整投影，保留光心与镜头偏移。
-      // 自由观察切换后由控制器更新，重新选机位即可恢复构图。
-      const originalUpdate = selectedCamera.updateProjectionMatrix.bind(selectedCamera)
-      selectedCamera.updateProjectionMatrix = () => {
-        if (freeMode) { originalUpdate(); return }
-        selectedCamera.projectionMatrix.fromArray(data.projection_matrix)
-        selectedCamera.projectionMatrixInverse.copy(selectedCamera.projectionMatrix).invert()
-      }
-      selectedCamera.updateProjectionMatrix()
-      selectedCamera.updateMatrixWorld(true)
-      if (orbit) {
-        controls = new OrbitControls(selectedCamera, renderer.domElement)
-        const distance = index === 3 ? 110 : 1500
-        controls.target.copy(selectedCamera.position).add(new THREE.Vector3(...data.direction).multiplyScalar(distance))
-        controls.enableDamping = true; controls.dampingFactor = .08; controls.minDistance = .2; controls.maxDistance = 15000
-      }
-      camera = selectedCamera
-      counter = 0; lastUi = performance.now()
-      setActive(index); setFree(orbit)
-    }
-    const unique = { geometries: new Set<THREE.BufferGeometry>(), materials: new Set<THREE.Material>(), textures: new Set<THREE.Texture>() }
-    function disposeRoot(root: THREE.Object3D) {
-      root.traverse(ob => {
-        if (!(ob instanceof THREE.Mesh)) return
-        if (ob.geometry) unique.geometries.add(ob.geometry)
-        for (const mat of (Array.isArray(ob.material) ? ob.material : [ob.material]).filter(Boolean)) {
-          unique.materials.add(mat)
-          for (const value of Object.values(mat)) if (value instanceof THREE.Texture) unique.textures.add(value)
-        }
-        if (ob instanceof THREE.InstancedMesh) ob.dispose()
-      })
-      for (const item of [...unique.geometries, ...unique.materials, ...unique.textures]) item.dispose()
-    }
-
-    /* 跨 GLB 用相同材质名称复用材质与纹理，避免同一套贴图重复占用显存。
-     * 所有文件仍可被标准 GLTFLoader 单独加载，浏览器缓存会复用相同纹理 URL。 */
-    async function load() {
+    /* 先显示轻量页面，再异步载入三维引擎，使慢速网络下也能立即获得反馈。
+     * 每次挂载独立管理场景实例，重试或退出时不会留下旧的异步初始化。 */
+    let cancelled = false, instance: PalaceScene | undefined
+    async function mountScene() {
       try {
-        const [manifest, cameras] = await Promise.all([readResource<ManifestFile>('manifest.json'), readResource<CameraFile>('cameras.json')])
-        if (cancelled) return
-        cameraData = cameras
-        selectCamera(0)
-        const materials = new Map<string, THREE.Material>(), unusedTextures = new Set<THREE.Texture>()
-        const results = await Promise.allSettled(manifest.files.map(async file => {
-          const gltf = await loader.loadAsync(resourceRoot + file.file)
-          return gltf.scene
-        }))
-        const rejected = results.find(result => result.status === 'rejected')
-        if (rejected) {
-          for (const result of results) if (result.status === 'fulfilled') disposeRoot(result.value)
-          throw rejected.reason
-        }
-        for (const result of results) {
-          if (result.status !== 'fulfilled') continue
-          const root = result.value
-          if (cancelled) { disposeRoot(root); continue }
-          root.traverse(ob => {
-            // 静态资源加载完后固定局部矩阵，减少每帧重复计算。
-            // 后续需要移动的对象可重新启用 matrixAutoUpdate。
-            ob.updateMatrix(); ob.matrixAutoUpdate = false
-            if (ob instanceof THREE.InstancedMesh) { instanceGroups++; instances += ob.count; ob.computeBoundingBox(); ob.computeBoundingSphere() }
-            if (!(ob instanceof THREE.Mesh)) return
-            const reuse = (mat: THREE.Material) => {
-              const shared = materials.get(mat.name)
-              if (shared) {
-                for (const value of Object.values(mat)) if (value instanceof THREE.Texture) unusedTextures.add(value)
-                mat.dispose(); return shared
-              }
-              materials.set(mat.name, mat); return mat
-            }
-            ob.material = Array.isArray(ob.material) ? ob.material.map(reuse) : reuse(ob.material)
-          })
-          modelRoot.add(root)
-        }
-        if (cancelled) return
-        const retained = new Set<THREE.Texture>()
-        for (const mat of materials.values()) for (const value of Object.values(mat)) if (value instanceof THREE.Texture) retained.add(value)
-        for (const texture of unusedTextures) if (!retained.has(texture)) texture.dispose()
-        setLoading('全部资源已加载')
-      } catch (failure) { if (!cancelled) setError(String(failure)) }
-    }
-
-    function frame(now: number) {
-      raf = requestAnimationFrame(frame)
-      if (!camera) return
-      controls?.update()
-      /* 固定预设重设导出矩阵，避免轨道控制器和正交缩放重写投影。
-       * 自由观察时由控制器更新，但重新切换机位即可回到精确构图。 */
-      if (!freeMode) camera.updateProjectionMatrix()
-      renderer.render(scene, camera)
-      if (!firstRenderedMilliseconds && modelRoot.children.length === 5) firstRenderedMilliseconds = performance.now() - started
-      counter++
-      if (now - lastUi > 1000) {
-        setMetrics({ fps: counter * 1000 / (now - lastUi), calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, textures: renderer.info.memory.textures, instances, instanceGroups, firstRenderedMilliseconds })
-        counter = 0; lastUi = now
+        const { createPalaceScene } = await import('./createPalaceScene')
+        if (cancelled || !host.current) return
+        instance = createPalaceScene(host.current, {
+          onProgress: (value, message) => { setProgress(previous => Math.max(previous, value)); setLoading(message) },
+          onReady: () => setReady(true),
+          onError: message => { setError(message); setTour(false); setImmersive(false); setPanel(null) },
+          onInteract: () => { setFree(true); setTour(false) },
+          onCamera: index => { setActive(index); setFree(false); setTour(false) },
+        })
+        api.current = instance
+      } catch {
+        if (!cancelled) setError('浏览器暂时无法显示三维画面，请检查网络与硬件加速设置，或使用支持 WebGL 2 的浏览器重试。')
       }
     }
-    api.current = { selectCamera }
-    load(); raf = requestAnimationFrame(frame)
-    return () => {
-      cancelled = true; cancelAnimationFrame(raf); controls?.dispose(); scene.remove(modelRoot); disposeRoot(modelRoot)
-      environment.dispose(); scene.environment = null; renderer.renderLists.dispose()
-      renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove(); api.current = null
-    }
-  }, [])
+    void mountScene()
+    return () => { cancelled = true; instance?.dispose(); if (api.current === instance) api.current = null }
+  }, [attempt])
 
-  return <main>
-    <div className="stage" ref={host} aria-label="天宫三维验证画面" />
-    <header><div className="brand"><span className="seal">天</span><div><h1>天宫<span>资源验证</span></h1><p>HEAVENLY PALACE / WEB ASSETS 01</p></div></div><div className="status"><i className={error ? 'bad' : ''}/>{error ? '加载异常' : loading}</div></header>
-    <aside className="view-label"><span>0{active + 1} / 04</span><h2>{labels[active]}</h2><p>{free ? '自由观察 · 拖动旋转 / 滚轮缩放 / 右键平移' : active === 3 ? '52 mm · 水平偏移 −0.12 · 精确投影' : '固定 4:3 · 米制坐标'}</p></aside>
-    {stats && <aside className="stats"><div><strong>{(metrics.fps || 0).toFixed(1)}</strong><span>FPS</span></div><dl><dt>Draw calls</dt><dd>{number(metrics.calls)}</dd><dt>绘制三角面</dt><dd>{number(metrics.triangles)}</dd><dt>GPU 实例</dt><dd>{number(metrics.instances)}</dd><dt>实例组 / 纹理</dt><dd>{number(metrics.instanceGroups)} / {number(metrics.textures)}</dd><dt>首帧加载</dt><dd>{((metrics.firstRenderedMilliseconds || 0)/1000).toFixed(2)} s</dd><dt>渲染画幅</dt><dd>1280 × 960 · 1×</dd></dl><p>基础场景目标 ≥ 30 FPS</p></aside>}
-    {error && <div className="error" role="alert">{error}</div>}
-    <footer><nav aria-label="相机选择">{labels.map((label,index) => <button key={label} className={active === index && !free ? 'selected' : ''} onClick={() => api.current?.selectCamera(index)}><span>0{index+1}</span>{label}</button>)}</nav><div className="toolbar"><button aria-pressed={free} onClick={() => api.current?.selectCamera(active,!free)}>自由观察</button><button aria-pressed={stats} onClick={() => setStats(!stats)}>性能统计</button></div><div className="footnote"><span><b>待重建</b> 远景云海 · 近岛云雾 · 入口五团遮檐云 · 瀑布动画</span><span role="status">基础 PBR 灯光 · 性能不代表完整特效场景</span></div></footer>
+  /* 画质和动态效果即时应用，不重新下载模型，也不重置当前视角。
+   * 系统减少动态效果的偏好在首次进入时生效，访客仍可自行开启。 */
+  useEffect(() => { api.current?.setMotion(motion) }, [motion, ready])
+  useEffect(() => { api.current?.setQuality(quality) }, [quality, ready])
+  useEffect(() => {
+    const sync = () => setFullscreen(Boolean(document.fullscreenElement))
+    document.addEventListener('fullscreenchange', sync)
+    return () => document.removeEventListener('fullscreenchange', sync)
+  }, [])
+  useEffect(() => {
+    if (!notice) return
+    const timer = window.setTimeout(() => setNotice(''), 4000)
+    return () => clearTimeout(timer)
+  }, [notice])
+  useEffect(() => {
+    if (panel) {
+      dialog.current?.showModal()
+    } else dialog.current?.close()
+  }, [panel])
+
+  /* 面板从用户操作入口统一打开，暂停环游并保留当前镜头位置。
+   * 对话框的副作用只负责同步原生打开状态，不额外派生页面状态。 */
+  function openPanel(value: 'help' | 'settings') {
+    api.current?.setTour(false); setTour(false); setPanel(value)
+  }
+
+  function toggleTour() {
+    if (!available) return
+    api.current?.setTour(!tour)
+    setTour(!tour); setFree(true)
+  }
+  function selectView(index: number) {
+    if (!available) return
+    api.current?.selectCamera(index)
+  }
+  function retry() {
+    setError(''); setReady(false); setProgress(0); setLoading('正在重新推开云间的门')
+    setFree(false); setTour(false); setAttempt(value => value + 1)
+  }
+  async function toggleFullscreen() {
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen()
+      else await shell.current?.requestFullscreen()
+    } catch { setNotice('浏览器暂未允许全屏，可使用“沉浸观景”隐藏界面。') }
+  }
+
+  /* 快捷键只在画面或页面空白处响应，避免干扰按钮、表单和对话框。
+   * 沉浸模式提供可聚焦的返回按钮，退出后将焦点还给原入口。 */
+  useEffect(() => {
+    function keyboard(event: KeyboardEvent) {
+      if (!available || panel || event.altKey || event.ctrlKey || event.metaKey || event.repeat) return
+      if (event.key === 'Escape') { setImmersive(false); return }
+      if (event.target instanceof Element && event.target.closest('button, input, select, textarea, a, dialog')) return
+      const key = event.key.toLowerCase()
+      if (/^[1-4]$/.test(key)) selectView(Number(key) - 1)
+      else if (key === 'r') selectView(active)
+      else if (key === ' ') { event.preventDefault(); toggleTour() }
+      else if (key === 'h' || key === '?') openPanel('help')
+      else if (key === 'i') setImmersive(value => !value)
+    }
+    document.addEventListener('keydown', keyboard)
+    return () => document.removeEventListener('keydown', keyboard)
+  })
+  useEffect(() => {
+    /* 等待可见性和不可交互状态更新后移动焦点，避免焦点落入隐藏控件。
+     * 初次挂载不主动夺取焦点，只有实际切换沉浸模式才执行恢复。 */
+    if (previousImmersive.current === immersive) return
+    previousImmersive.current = immersive
+    document.getElementById(immersive ? 'exit-immersion' : 'enter-immersion')?.focus()
+  }, [immersive])
+
+  return <main ref={shell} className={`palace ${ready ? 'is-ready' : ''} ${immersive ? 'is-immersive' : ''}`}>
+    <div className="stage" ref={host} aria-busy={!ready} />
+    <div className="scene-shade" aria-hidden="true" />
+    <div className="scene-interface" inert={immersive || !available}>
+      <header className="masthead">
+        <a className="brand" href="./" aria-label="天宫首页" onClick={event => { event.preventDefault(); selectView(0) }}>
+          <span className="seal">天<br />宫</span><span className="brand-name">天宫<small>HEAVENLY PALACE</small></span>
+        </a>
+        <div className="header-right"><span className="edition">云上漫游 <span>·</span> 数字仙境</span>
+          <button className="text-button immerse-button" id="enter-immersion" disabled={!available} onClick={() => setImmersive(true)}><Icon name="eye" /><span>沉浸观景</span></button>
+        </div>
+      </header>
+      <section className="view-story" key={active} aria-live="polite" aria-atomic="true">
+        <p className="eyebrow"><span className="chapter-rule" />天宫四景 <span className="chapter-number">0{active + 1} / 04</span></p>
+        <h1>{view.title}</h1><p className="english-title">{view.subtitle}</p>
+        <p className="poem">{view.description}</p>
+        <button className="story-link" disabled={!available} onClick={() => openPanel('help')}>此间一览 <Icon name="arrow" /></button>
+      </section>
+      <aside className="scene-tools" aria-label="画面工具">
+        <button className="icon-button" aria-label="放大画面" title="放大画面（+）" disabled={!available} onClick={() => api.current?.zoom(1)}><Icon name="plus" /></button>
+        <button className="icon-button" aria-label="缩小画面" title="缩小画面（−）" disabled={!available} onClick={() => api.current?.zoom(-1)}><Icon name="minus" /></button>
+        <span className="tool-divider" />
+        <button className="icon-button" aria-label="恢复当前视角" title="恢复当前视角（R）" disabled={!available} onClick={() => selectView(active)}><Icon name="reset" /></button>
+        {document.fullscreenEnabled && <button className="icon-button" aria-label={fullscreen ? '退出全屏' : '全屏显示'} title={fullscreen ? '退出全屏' : '全屏显示'} disabled={!available} onClick={() => void toggleFullscreen()}><Icon name="expand" /></button>}
+      </aside>
+      <div className="scene-caption" aria-hidden="true"><span>山海有境</span><i /><span>心游无间</span></div>
+      <footer className="journey-footer">
+        <div className="journey-topline"><span className="journey-label">选一处风景，慢慢看。</span><span className="view-state" role="status"><i className={tour ? 'is-playing' : ''} />{tour ? '正在环游 · 拖动画面即可接管' : free ? '自由观察' : '静赏此景'}</span></div>
+        <div className="journey-dock">
+          <nav className="view-nav" aria-label="天宫观景视角">{views.map((item, index) => <button key={item.label} className={`view-button ${active === index ? 'selected' : ''}`} aria-pressed={active === index} disabled={!available} onClick={() => selectView(index)}>
+            <span className="view-number">0{index + 1}</span><span className="view-name">{item.label}<small>{['环岛 · 观群殿', '中轴 · 赏重檐', '高处 · 寻山水', '月门 · 看流云'][index]}</small></span><span className="view-mark" aria-hidden="true">{item.mark}</span>
+          </button>)}</nav>
+          <button className={`tour-button ${tour ? 'is-active' : ''}`} aria-pressed={tour} disabled={!available} onClick={toggleTour}><Icon name={tour ? 'pause' : 'play'} /><span>{tour ? '暂停环游' : '自动环游'}</span></button>
+        </div>
+        <div className="journey-bottomline">
+          <p className="interaction-hint" id="scene-instructions"><Icon name="mouse" /><span className="desktop-hint">拖动旋转<span>·</span>滚轮缩放<span>·</span>右键平移</span><span className="touch-hint">单指旋转<span>·</span>双指缩放与平移</span></p>
+          <div className="utility-links"><button className="text-button" disabled={!available} onClick={() => openPanel('settings')}><Icon name="settings" />观景设置</button><span /><button className="text-button" disabled={!available} onClick={() => openPanel('help')}><Icon name="help" />游览指南</button></div>
+        </div>
+      </footer>
+    </div>
+    {/* 沉浸时保留独立返回控件，隐藏区域同时退出键盘导航和无障碍树。
+      * 自动环游的暂停入口仍可用，不要求访客记住快捷键。 */}
+    <div className="immersive-controls" inert={!immersive} aria-hidden={!immersive}>
+      <button className="text-button" id="exit-immersion" onClick={() => setImmersive(false)}><Icon name="close" />返回界面</button>
+      <button className="text-button" onClick={toggleTour} aria-pressed={tour}><Icon name={tour ? 'pause' : 'play'} />{tour ? '暂停环游' : '自动环游'}</button>
+    </div>
+    <div className={`arrival ${ready && !error ? 'has-arrived' : ''}`} aria-hidden={ready && !error} inert={ready && !error}>
+      <span className="arrival-kicker">HEAVENLY PALACE</span>
+      <svg className="arrival-roof" viewBox="0 0 280 110" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true"><path d="M18 59c49 0 87-20 122-44 35 24 73 44 122 44M35 60h210M53 66h174M77 66v32m126-32v32M96 66v32m88-32v32M67 99h146M62 105h156M109 32h62M135 13l5-7 5 7" /><path d="M5 84h43m184 0h43M20 91h28m184 0h28" opacity=".4" /></svg>
+      <h2>{error ? '稍候，再入天宫' : '云深处，天宫见'}</h2>
+      {error ? <div className="arrival-error" role="alert"><p>{error}</p><button className="primary-button" onClick={retry}>重新载入 <Icon name="reset" /></button></div> : <>
+        <p role="status">{loading}</p><div className="arrival-progress"><progress value={progress} max="100" aria-label="天宫加载进度" /><span>{progress}<small>%</small></span></div>
+        <p className="arrival-note">初次相逢需要片刻，静候云开。</p>
+      </>}
+      <span className="arrival-seal" aria-hidden="true">入境</span>
+    </div>
+    {/* 原生对话框负责焦点约束和退出后的焦点恢复，窄屏面板可独立滚动。
+      * 背景点击与退出键都可以关闭，帮助内容同时覆盖鼠标、触屏和键盘。 */}
+    <dialog ref={dialog} className="visitor-dialog" aria-labelledby="panel-title" onCancel={() => setPanel(null)} onClick={event => { if (event.target === event.currentTarget) setPanel(null) }}>
+      <div className="dialog-content">
+        <div className="dialog-heading"><p className="eyebrow">{panel === 'settings' ? 'MAKE YOURSELF AT HOME' : 'A LITTLE GUIDE'}</p><button className="icon-button" aria-label="关闭面板" autoFocus onClick={() => setPanel(null)}><Icon name="close" /></button></div>
+        <h2 id="panel-title">{panel === 'settings' ? '自在观景' : '游于云上'}</h2>
+        {panel === 'settings' ? <>
+          <p className="dialog-intro">用适合自己的节奏，看一会儿风景。</p>
+          <section className="setting-section"><h3>画面细腻度</h3><div className="quality-options" role="group" aria-label="画面细腻度"><button aria-pressed={quality === 'balanced'} onClick={() => setQuality('balanced')}><strong>均衡</strong><span>兼顾清晰与流畅</span></button><button aria-pressed={quality === 'high'} onClick={() => setQuality('high')}><strong>精细</strong><span>呈现更多建筑细节</span></button></div><p className="setting-note">若拖动画面不够流畅，可切回均衡。</p></section>
+          <section className="setting-section motion-setting"><div><h3>流云与飞瀑</h3><p>让云雾与水流随时间轻轻变化。</p></div><button className="switch" role="switch" aria-checked={motion} aria-label="流云与飞瀑动态效果" onClick={() => setMotion(value => !value)}><span /></button></section>
+          <p className="settings-footnote">设置在本次游览中生效。</p>
+        </> : <>
+          <p className="dialog-intro">{view.detail}</p>
+          <div className="guide-rows"><div><span>01</span><h3>移步换景</h3><p>点击下方四处风景，自由往返全景、正殿、鸟瞰与殿内。</p></div><div><span>02</span><h3>随心细看</h3><p>鼠标拖动旋转，滚轮缩放，右键拖动平移。触屏单指旋转，双指缩放与平移。</p></div><div><span>03</span><h3>让风景流动</h3><p>开启自动环游，慢慢看过宫阙。拖动画面即可接管；点击恢复按钮，回到此景的初始构图。</p></div></div>
+          <div className="keyboard-guide"><span>键盘也可以</span><p><kbd>1</kbd>–<kbd>4</kbd> 换景 <kbd>R</kbd> 复位 <kbd>空格</kbd> 环游</p><p><kbd>↑ ↓ ← →</kbd> 转动 <kbd>+ −</kbd> 缩放 <kbd>I</kbd> 沉浸</p></div>
+          <button className="primary-button guide-done" onClick={() => setPanel(null)}>继续看风景 <Icon name="arrow" /></button>
+        </>}
+      </div>
+    </dialog>
+    {notice && <div className="notice" role="status">{notice}</div>}
   </main>
 }

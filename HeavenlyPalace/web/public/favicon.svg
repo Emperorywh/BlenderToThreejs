@@ -1,0 +1,3 @@
+<!-- 本地朱砂印记作为站点标识，无需外部字体或图片服务。
+     采用简洁的屋檐线条，在浏览器标签的小尺寸中保持清晰。 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="5" fill="#a24b35"/><g fill="none" stroke="#f1ecd9" stroke-width="3" stroke-linecap="round"><path d="M10 29c9-1 16-6 22-14 6 8 13 13 22 14M16 34h32M21 34v16m22-16v16M15 51h34M31 35v16"/></g></svg>

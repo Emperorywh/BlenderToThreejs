@@ -1,5 +1,5 @@
-/* 现有 Web 项目首页直接承载天宫资源验证与后续场景开发。
- * 模型文件由 Vite 读取独立交付目录，页面源码统一维护在本项目中。 */
+/* 首页直接承载完整天宫游览，交互与场景代码统一维护在本项目中。
+ * 构建产物包含页面及其所需文件，可由静态服务器直接提供访问。 */
 import PalaceViewer from './scene/PalaceViewer'
 import './scene/PalaceViewer.css'
 

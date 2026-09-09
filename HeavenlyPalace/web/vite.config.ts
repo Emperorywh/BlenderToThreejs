@@ -38,6 +38,9 @@ function palaceAssets(): Plugin {
 }
 
 export default defineConfig({
+  /* 相对基础路径兼容域名根目录与带尾斜杠的子目录部署。
+   * 构建后的脚本、样式和场景文件始终跟随当前站点目录。 */
+  base: './',
   plugins: [react(), palaceAssets()],
   server: { host: '127.0.0.1', port: 5174, strictPort: true },
 })
