@@ -1,0 +1,27 @@
+00:01.594  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08.blend"
+00:02.516  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Environment_v07.blend"
+00:06.657  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08.blend"
+Info: Saved as "HeavenlyPalace_Lookdev_v08.blend"
+V08_AUDIT_BVH_READY
+V08_AUDIT {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend", "blender": "5.2.1 LTS", "baseline_sha256": "35f97b548ec813fc7f15de03837e0a8b483fcd5eaa78c6c292559983586f4efb", "protected_objects": 7019, "changed_architecture": [], "camera_count": 16, "changed_cameras": [], "changed_markers": [], "resolution_preserved": true, "water_centerlines_preserved": true, "moon_samples": 2779, "moon_blocked": [], "moon_through_blocked": [], "rectangular_entry_blocked": [], "route_samples": 7179, "route_gaps": 0, "route_obstructions": 0, "support_samples": 2834, "cloud_intrusions_over_plaza": [], "visible_mesh_objects": 8448, "unique_mesh_vertices": 373569, "render": {"engine": "CYCLES", "device": "CPU", "samples": 48, "adaptive_threshold": 0.04500000178813934, "denoising": true, "volume_bounces": 1, "volume_step_rate": 1.0, "volume_biased": true}, "passed": true}
+V08_SUPPORT_FAILURES []
+V08_ROOT_FAILURES []
+Info: No new files have been packed
+Info: Saved as "HeavenlyPalace_Lookdev_v08.blend"
+V08_DELIVERY_FILE_READY C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08.blend
+12:30.516  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\01_oblique.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\01_oblique.png", "camera": "CAM_01_整体斜视_55mm", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 718.98, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+21:34.016  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\02_front.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\02_front.png", "camera": "CAM_02_正面_正交比例校核", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 543.06, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+32:56.735  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\03_aerial.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\03_aerial.png", "camera": "CAM_03_鸟瞰_50mm", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 682.93, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+37:58.125  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\04_interior.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\04_interior.png", "camera": "CAM_04_殿内月门_眼高1点65米_35mm", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 300.69, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+42:16.438  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\05_hero_pine.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\05_hero_pine.png", "camera": "CAM_13_古松样板_斜干主枝与根盘", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 258.94, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+51:53.500  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\06_waterfall.png'
+V08_FINAL_RENDER {"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\06_waterfall.png", "camera": "CAM_15_瀑布出水口_分段落差", "engine": "CYCLES", "device": "CPU", "resolution": [1800, 1350], "samples": 48, "denoising": true, "seconds": 576.87, "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"}
+V08_ALL_DELIVERABLE_RENDERS_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

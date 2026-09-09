@@ -1,0 +1,7 @@
+00:01.813  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\v08_environment.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\lookdev_materials_v08.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes=True
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\lookdev_materials_v08.py:380: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes=True
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\lookdev_materials_v08.py:488: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True

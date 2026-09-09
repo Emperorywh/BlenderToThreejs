@@ -1,0 +1,58 @@
+{
+  "2": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\qa\\preview_02_front.png",
+    "camera": "CAM_02_正面_正交比例校核",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      900,
+      675
+    ],
+    "samples": 16,
+    "denoising": true,
+    "seconds": 29.28,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "3": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\qa\\preview_03_aerial.png",
+    "camera": "CAM_03_鸟瞰_50mm",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      900,
+      675
+    ],
+    "samples": 16,
+    "denoising": true,
+    "seconds": 34.03,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "13": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\qa\\preview_05_hero_pine.png",
+    "camera": "CAM_13_古松样板_斜干主枝与根盘",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      900,
+      675
+    ],
+    "samples": 16,
+    "denoising": true,
+    "seconds": 17.77,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "15": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\qa\\preview_06_waterfall.png",
+    "camera": "CAM_15_瀑布出水口_分段落差",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      900,
+      675
+    ],
+    "samples": 16,
+    "denoising": true,
+    "seconds": 27.67,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  }
+}

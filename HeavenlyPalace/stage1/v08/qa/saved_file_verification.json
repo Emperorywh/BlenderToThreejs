@@ -1,0 +1,30 @@
+{
+  "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend",
+  "blend_bytes": 10907809,
+  "blend_sha256": "b7c11869e07c7374e58095fb9e7969eec94f404b3e99fd04e8dcae01b07747d0",
+  "baseline_v07_unchanged": true,
+  "camera_count": 16,
+  "camera_errors": [],
+  "active_camera": "CAM_01_整体斜视_55mm",
+  "resolution": [
+    1800,
+    1350,
+    100
+  ],
+  "engine": "CYCLES",
+  "samples": 48,
+  "denoising": true,
+  "packed_images": [
+    {
+      "name": "V08_色彩与氛围原型参考_非渲染背景",
+      "packed": true,
+      "keep_on_reload": true,
+      "size": [
+        1448,
+        1086
+      ]
+    }
+  ],
+  "geometry_audit_passed": true,
+  "passed": true
+}

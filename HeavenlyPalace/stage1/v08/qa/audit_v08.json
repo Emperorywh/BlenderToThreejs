@@ -1,0 +1,154 @@
+{
+  "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend",
+  "blender": "5.2.1 LTS",
+  "baseline_sha256": "35f97b548ec813fc7f15de03837e0a8b483fcd5eaa78c6c292559983586f4efb",
+  "protected_objects": 7019,
+  "changed_architecture": [],
+  "camera_count": 16,
+  "changed_cameras": [],
+  "changed_markers": [],
+  "resolution_preserved": true,
+  "water_centerlines_preserved": true,
+  "moon_samples": 2779,
+  "moon_blocked": [],
+  "moon_through_blocked": [],
+  "rectangular_entry_blocked": [],
+  "route_samples": 7179,
+  "route_gaps": 0,
+  "route_obstructions": 0,
+  "routes": [
+    {
+      "name": "中轴全程_X-8",
+      "samples": 1400,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.40000152587890625,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "中轴全程_X0",
+      "samples": 1400,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.40000152587890625,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "中轴全程_X8",
+      "samples": 1400,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.40000152587890625,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "侧廊_-1_-5.1",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": -5.960464477539063e-08,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_-1_0",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_-1_5.1",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_-5.1",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_0",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_5.1",
+      "samples": 311,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000008344650269,
+      "minimum_floor_z": -5.960464477539063e-08,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "亭桥通路_-5.97",
+      "samples": 371,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.029999732971191406,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.029999732971191
+    },
+    {
+      "name": "亭桥通路_0",
+      "samples": 371,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.029999732971191406,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.029999732971191
+    },
+    {
+      "name": "亭桥通路_5.97",
+      "samples": 371,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.029999732971191406,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.029999732971191
+    }
+  ],
+  "support_samples": 2834,
+  "support_failures": [],
+  "root_failures": [],
+  "cloud_intrusions_over_plaza": [],
+  "images": [
+    {
+      "name": "V08_色彩与氛围原型参考_非渲染背景",
+      "source": "FILE",
+      "packed": true,
+      "path": "C:\\Users\\12899\\Downloads\\ChatGPT Image 2026年9月8日 17_54_37.png"
+    }
+  ],
+  "visible_mesh_objects": 8448,
+  "unique_mesh_vertices": 373569,
+  "render": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 48,
+    "adaptive_threshold": 0.04500000178813934,
+    "denoising": true,
+    "volume_bounces": 1,
+    "volume_step_rate": 1.0,
+    "volume_biased": true
+  },
+  "passed": true
+}

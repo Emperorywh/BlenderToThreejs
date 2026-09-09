@@ -1,0 +1,8 @@
+00:01.844  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08.blend"
+云体积构建函数:380: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+03:36.531  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\sample_01_oblique.png'
+Info: Saved as "HeavenlyPalace_Lookdev_v08.blend"
+V08_CUMULUS_PREVIEW_READY
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

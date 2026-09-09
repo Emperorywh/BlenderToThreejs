@@ -1,0 +1,201 @@
+{
+  "images": [
+    {
+      "name": "01_oblique",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 2845198,
+      "sha256": "8bb3b8cee92917b27a5728758f2bbbe948d7df888c68458960da37265c14f5b8",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 3.7e-05,
+      "extrema": [
+        [
+          0,
+          244
+        ],
+        [
+          0,
+          246
+        ],
+        [
+          0,
+          247
+        ]
+      ]
+    },
+    {
+      "name": "02_front",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 2942584,
+      "sha256": "f4271fa8ccfd5d191becc2ac8248befe84d0e3757e7944930e9acc7d07647da0",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 0.000307,
+      "extrema": [
+        [
+          0,
+          244
+        ],
+        [
+          0,
+          246
+        ],
+        [
+          0,
+          248
+        ]
+      ]
+    },
+    {
+      "name": "03_aerial",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 2865559,
+      "sha256": "007d5d33fce6b2a3a11a62e6b1ba41d898d8603cb6fcede39938e68fc798d50c",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 9.4e-05,
+      "extrema": [
+        [
+          0,
+          242
+        ],
+        [
+          0,
+          244
+        ],
+        [
+          0,
+          244
+        ]
+      ]
+    },
+    {
+      "name": "04_interior",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 2429524,
+      "sha256": "722f64262a58aedab09097dcabe31b2280ff22bb373f01a0a378d5e02be73bdb",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 7.8e-05,
+      "extrema": [
+        [
+          0,
+          252
+        ],
+        [
+          0,
+          249
+        ],
+        [
+          0,
+          246
+        ]
+      ]
+    },
+    {
+      "name": "05_hero_pine",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 3074055,
+      "sha256": "0a056a94a846d01f6e1e7a105400ba0b2c66d2d9e74fafd5059b633b6941bea4",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 0.003037,
+      "extrema": [
+        [
+          0,
+          232
+        ],
+        [
+          0,
+          226
+        ],
+        [
+          0,
+          218
+        ]
+      ]
+    },
+    {
+      "name": "06_waterfall",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 3192837,
+      "sha256": "91779ec7eb14fdf8824e1ec7294ccbc803a8f1c6e875504b5b68a01ea94153db",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 0.000258,
+      "extrema": [
+        [
+          0,
+          253
+        ],
+        [
+          0,
+          251
+        ],
+        [
+          0,
+          244
+        ]
+      ]
+    },
+    {
+      "name": "07_neutral_environment",
+      "exists": true,
+      "size": [
+        1800,
+        1350
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "bytes": 2367328,
+      "sha256": "a4be00a28f2d3bf8104194705d82f01b1f027c43305ab2720ff70e9d1708ac0d",
+      "near_white_fraction": 0.0,
+      "near_black_fraction": 1.8e-05,
+      "extrema": [
+        [
+          0,
+          233
+        ],
+        [
+          0,
+          233
+        ],
+        [
+          0,
+          233
+        ]
+      ]
+    }
+  ],
+  "passed": true
+}

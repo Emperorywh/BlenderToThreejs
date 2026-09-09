@@ -1,0 +1,86 @@
+{
+  "1": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\01_oblique.png",
+    "camera": "CAM_01_整体斜视_55mm",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 718.98,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "2": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\02_front.png",
+    "camera": "CAM_02_正面_正交比例校核",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 543.06,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "3": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\03_aerial.png",
+    "camera": "CAM_03_鸟瞰_50mm",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 682.93,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "4": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\04_interior.png",
+    "camera": "CAM_04_殿内月门_眼高1点65米_35mm",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 300.69,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "13": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\05_hero_pine.png",
+    "camera": "CAM_13_古松样板_斜干主枝与根盘",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 258.94,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  },
+  "15": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v08\\renders\\06_waterfall.png",
+    "camera": "CAM_15_瀑布出水口_分段落差",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 48,
+    "denoising": true,
+    "seconds": 576.87,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08.blend"
+  }
+}

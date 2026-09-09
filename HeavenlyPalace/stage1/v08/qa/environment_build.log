@@ -1,0 +1,17 @@
+00:01.719  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Environment_v07.blend"
+V08_ROCKS_REFINED 31
+V08_PINES_REFINED [{"id": 4, "root": [343.0, 153.0, 13.0], "clusters": 90}, {"id": 1, "root": [-230.0, -175.0, 3.3492431640625], "clusters": 89}, {"id": 2, "root": [219.0, -144.0, -5.80816650390625], "clusters": 89}, {"id": 3, "root": [-292.0, 125.0, 3.00006103515625], "clusters": 90}, {"id": 5, "root": [-215.0, 210.0, 20.6492919921875], "clusters": 83}, {"id": 6, "root": [177.0, 387.0, -4.79248046875], "clusters": 85}, {"id": 7, "root": [-168.0, 382.0, 20.38287353515625], "clusters": 95}, {"id": 8, "root": [219.0, 319.0, 12.77386474609375], "clusters": 85}]
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_lookdev_v08.py:60: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes=True
+00:11.625  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_oblique_preview.png'
+Info: Saved as "v08_environment.blend"
+V08_RENDER 1 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_oblique_preview.png
+00:19.984  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_pine_preview.png'
+V08_RENDER 13 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_pine_preview.png
+00:29.500  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_waterfall_preview.png'
+V08_RENDER 15 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\qa\neutral_waterfall_preview.png
+01:07.969  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\07_neutral_environment.png'
+V08_RENDER 1 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v08\renders\07_neutral_environment.png
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
