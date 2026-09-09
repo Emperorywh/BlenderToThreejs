@@ -1,0 +1,28 @@
+00:03.015  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_environment_v07.py:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes=True
+V07_ROCKS_READY 36
+V07_PINES_READY 8
+V07_WATER_READY 4
+Info: Saved as "v07_working.blend"
+V07_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\v07_working.blend OBJECTS 8261
+00:41.875  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\01_oblique.png'
+V07_RENDER 1 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\01_oblique.png
+00:50.593  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\02_front.png'
+V07_RENDER 2 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\02_front.png
+00:58.421  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\03_aerial.png'
+V07_RENDER 3 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\03_aerial.png
+01:07.906  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\12_main_cliff.png'
+V07_RENDER 12 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\12_main_cliff.png
+01:17.359  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\13_hero_pine.png'
+V07_RENDER 13 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\13_hero_pine.png
+01:26.953  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\14_bridge_environment.png'
+V07_RENDER 14 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\14_bridge_environment.png
+01:35.937  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\15_waterfall_detail.png'
+V07_RENDER 15 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\15_waterfall_detail.png
+01:48.984  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\04_interior.png'
+V07_RENDER 4 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\04_interior.png
+V07_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

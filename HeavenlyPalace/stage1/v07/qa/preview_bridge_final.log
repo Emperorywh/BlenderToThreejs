@@ -1,0 +1,12 @@
+00:02.797  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_environment_v07.py:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes=True
+V07_ROCKS_READY 36
+V07_PINES_READY 8
+V07_WATER_READY 4
+Info: Saved as "v07_working.blend"
+V07_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\v07_working.blend OBJECTS 8262
+00:52.094  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\16_bridge_clearance.png'
+V07_RENDER 16 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\16_bridge_clearance.png
+V07_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)

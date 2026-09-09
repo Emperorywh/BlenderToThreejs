@@ -1,0 +1,22 @@
+00:03.390  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Environment_v07.blend"
+只读重建摘要函数:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+00:09.593  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+内嵌V07环境重建:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+V07_ROCKS_READY 36
+V07_PINES_READY 8
+V07_WATER_READY 4
+Info: Saved as "v07_rebuild_check.blend"
+V07_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\v07_rebuild_check.blend OBJECTS 8262
+V07_COMPLETE
+00:55.953  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+内嵌V07环境重建:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+V07_ROCKS_READY 36
+V07_PINES_READY 8
+V07_WATER_READY 4
+Info: Saved as "v07_rebuild_check.blend"
+V07_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\v07_rebuild_check.blend OBJECTS 8262
+V07_COMPLETE
+{"baseline_sha256": "37536c0f84e7e5be1bf2a2b5a0989588e330c0e4db989009f694db81ce505b63", "baseline_unchanged": true, "original_objects": 8262, "embedded_rebuilds": [{"pass": 1, "objects": 8262, "changed": [], "added": [], "passed": true}, {"pass": 2, "objects": 8262, "changed": [], "added": [], "passed": true}], "passed": true}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

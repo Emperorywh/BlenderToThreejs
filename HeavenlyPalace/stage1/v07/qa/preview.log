@@ -1,0 +1,20 @@
+00:02.593  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_environment_v07.py:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes=True
+V07_ROCKS_READY 34
+V07_PINES_READY 8
+V07_WATER_READY 4
+Info: Saved as "v07_working.blend"
+V07_SAVED C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\v07_working.blend OBJECTS 8263
+00:40.734  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\01_oblique.png'
+V07_RENDER 1 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\01_oblique.png
+00:49.187  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\13_hero_pine.png'
+V07_RENDER 13 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\13_hero_pine.png
+00:59.000  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\14_bridge_environment.png'
+V07_RENDER 14 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\14_bridge_environment.png
+01:11.390  render           | Saved: 'C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\04_interior.png'
+V07_RENDER 4 C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\v07\qa\04_interior.png
+V07_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

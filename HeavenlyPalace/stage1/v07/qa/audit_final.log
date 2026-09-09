@@ -1,0 +1,9 @@
+00:02.797  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Environment_v07.blend"
+00:04.625  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Architecture_v06.blend"
+沿用验收审查函数:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+00:08.640  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Environment_v07.blend"
+V07_AUDIT_BVH_READY
+{"file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Environment_v07.blend", "baseline_sha256": "37536c0f84e7e5be1bf2a2b5a0989588e330c0e4db989009f694db81ce505b63", "objects": 8262, "protected_objects": 7021, "changed_architecture": [], "preserved_cameras": 11, "changed_cameras": [], "changed_markers": [], "lighting_and_world_unchanged": true, "moon_samples": 2779, "moon_blocked": [], "moon_through": [], "route_sample_count": 17381, "route_errors": 0, "support_sample_count": 2834, "support_failures": [], "bridge_gap_samples": 462, "bridge_gap_failures": [], "root_failures": [], "pine_architecture_intersections": [], "cameras_inside_rock": [], "freefall_samples": 2286, "water_rock_intrusions": [], "topology_errors": [], "environment_unique_meshes": 391, "environment_unique_vertices": 60331, "shared_meshes": 7, "passed": true}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

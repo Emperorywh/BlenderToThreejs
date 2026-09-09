@@ -1,0 +1,25 @@
+{
+  "baseline_sha256": "9a591f074691af45414a6393e89fbbceb5aab58f628dc2ec1a87b5af4870bc9f",
+  "baseline_unchanged": true,
+  "original_object_count": 7136,
+  "embedded_rebuilds": [
+    {
+      "pass": 1,
+      "object_count": 7136,
+      "changed_objects": [],
+      "added_objects": [],
+      "saved_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v06\\qa\\v06_rebuild_check.blend",
+      "passed": true
+    },
+    {
+      "pass": 2,
+      "object_count": 7136,
+      "changed_objects": [],
+      "added_objects": [],
+      "saved_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v06\\qa\\v06_rebuild_check.blend",
+      "passed": true
+    }
+  ],
+  "legacy_entry_tested": "build_whitebox.py 当前阶段转接已实际运行",
+  "passed": true
+}

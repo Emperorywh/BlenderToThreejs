@@ -1,0 +1,37 @@
+{
+  "version": "v06",
+  "baseline_file": "HeavenlyPalace_Structure_v05.blend",
+  "baseline_sha256": "9a591f074691af45414a6393e89fbbceb5aab58f628dc2ec1a87b5af4870bc9f",
+  "output_file": "HeavenlyPalace_Architecture_v06.blend",
+  "corridor": {"center_x": 130.0, "south": -139.0, "north": 121.25, "width": 29.0, "eave_z": 20.0, "rise": 4.35, "thickness": 0.32, "rafter_step": 2.0},
+  "entry": {"center_y": -192.0, "clear_width": 28.0, "clear_height": 29.0, "central_width": 78.0, "central_depth": 34.0, "central_eave_z": 35.0, "central_rise": 9.5, "wing_center_x": 95.0, "wing_width": 120.0, "wing_depth": 34.0, "wing_eave_z": 29.0, "wing_rise": 4.8},
+  "pavilions": [
+    {"prefix": "前庭角亭_-1", "region": "west_front", "center": [-130.0,-157.0,0.0], "column_height": 23.0, "grid": 18.0, "roof_width": 32.0, "roof_depth": 36.5, "eave_z": 26.0, "rise": 7.0},
+    {"prefix": "前庭角亭_1", "region": "east_front", "center": [130.0,-157.0,0.0], "column_height": 23.0, "grid": 18.0, "roof_width": 32.0, "roof_depth": 36.5, "eave_z": 26.0, "rise": 7.0},
+    {"prefix": "前庭后角亭_-1", "region": "west_rear", "center": [-130.0,137.0,0.0], "column_height": 21.0, "grid": 18.0, "roof_width": 32.0, "roof_depth": 32.0, "eave_z": 24.8, "rise": 6.7},
+    {"prefix": "前庭后角亭_1", "region": "east_rear", "center": [130.0,137.0,0.0], "column_height": 21.0, "grid": 18.0, "roof_width": 32.0, "roof_depth": 32.0, "eave_z": 24.8, "rise": 6.7},
+    {"prefix": "上庭侧亭_-1", "region": "west_side", "center": [-131.0,180.0,12.0], "column_height": 19.0, "grid": 17.0, "roof_width": 31.0, "roof_depth": 31.0, "eave_z": 34.0, "rise": 6.8},
+    {"prefix": "上庭侧亭_1", "region": "east_side", "center": [131.0,180.0,12.0], "column_height": 19.0, "grid": 17.0, "roof_width": 31.0, "roof_depth": 31.0, "eave_z": 34.0, "rise": 6.8},
+    {"prefix": "东侧观景亭", "region": "view_pavilion", "center": [309.0,196.0,12.0], "column_height": 17.0, "grid": 16.0, "roof_width": 30.0, "roof_depth": 30.0, "eave_z": 32.0, "rise": 6.4}
+  ],
+  "roof_curve_power": 1.7,
+  "roof_toe_lift": 0.20,
+  "secondary_corner_lift": 1.2,
+  "secondary_roof_thickness": 0.36,
+  "rafter_width": 0.22,
+  "rafter_height": 0.26,
+  "bridge": {"start_x":150.0,"end_x":264.0,"center_y":178.0,"deck_z":12.0,"deck_width":12.0,"rail_offset":6.44,"rail_height":1.6},
+  "stone_rail_height": 1.5,
+  "stone_rail_module_length": 6.0,
+  "render_width": 1800,
+  "render_height": 1350,
+  "render_samples": 48,
+  "render_threads": 16,
+  "detail_cameras": [
+    {"frame":7,"name":"CAM_07_入口长廊_直口与梁架","location":[96.0,-306.0,55.0],"target":[36.0,-192.0,22.0],"lens":37.0,"output":"07_entry_detail"},
+    {"frame":8,"name":"CAM_08_回廊转角_高低檐衔接","location":[73.0,-93.0,47.0],"target":[129.0,-160.0,21.0],"lens":45.0,"output":"08_corner_detail"},
+    {"frame":9,"name":"CAM_09_亭桥连接_石栏与桥台","location":[227.0,69.0,75.0],"target":[190.0,178.0,21.0],"lens":28.0,"output":"09_bridge_detail"},
+    {"frame":10,"name":"CAM_10_回廊檐下_柱头椽架","location":[126.0,-88.0,6.0],"target":[132.0,-36.0,19.0],"lens":27.0,"output":"10_corridor_under_eave"},
+    {"frame":11,"name":"CAM_11_观景亭_落地与桥端","location":[268.0,228.0,32.0],"target":[309.0,195.0,25.0],"lens":36.0,"output":"11_view_pavilion"}
+  ]
+}

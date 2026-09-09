@@ -1,0 +1,389 @@
+{
+  "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Environment_v07.blend",
+  "baseline_sha256": "37536c0f84e7e5be1bf2a2b5a0989588e330c0e4db989009f694db81ce505b63",
+  "objects": 8262,
+  "protected_objects": 7021,
+  "changed_architecture": [],
+  "preserved_cameras": 11,
+  "changed_cameras": [],
+  "changed_markers": [],
+  "lighting_and_world_unchanged": true,
+  "moon_samples": 2779,
+  "moon_blocked": [],
+  "moon_through": [],
+  "route_sample_count": 17381,
+  "route_errors": 0,
+  "routes": [
+    {
+      "name": "中轴全程_X-8",
+      "samples": 2800,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "中轴全程_X0",
+      "samples": 2800,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "中轴全程_X8",
+      "samples": 2800,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": -47.79999923706055,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "侧廊_-1_-5.1",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": -5.960464477539063e-08,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_-1_0",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_-1_5.1",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "辅助阶_-1_0_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_-1_0_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_-1_0_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_-1_1_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_-1_1_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_-1_1_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_-1_2_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "辅助阶_-1_2_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "辅助阶_-1_2_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "后角亭转至侧阶_-1",
+      "samples": 73,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_-5.1",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000008344650269,
+      "minimum_floor_z": -5.960464477539063e-08,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_0",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧廊_1_5.1",
+      "samples": 621,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": -5.960464477539063e-08,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "辅助阶_1_0_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_1_0_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_1_0_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 0.19999998807907104,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "辅助阶_1_1_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_1_1_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_1_1_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 12.199999809265137,
+      "maximum_floor_z": 24.0
+    },
+    {
+      "name": "辅助阶_1_2_-5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "辅助阶_1_2_0",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "辅助阶_1_2_5",
+      "samples": 131,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.20000076293945312,
+      "minimum_floor_z": 24.200000762939453,
+      "maximum_floor_z": 36.0
+    },
+    {
+      "name": "后角亭转至侧阶_1",
+      "samples": 73,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.10000002384185791,
+      "minimum_floor_z": 0.0,
+      "maximum_floor_z": 0.10000002384185791
+    },
+    {
+      "name": "侧亭到桥面_-4",
+      "samples": 533,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "侧亭到桥面_0",
+      "samples": 533,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "侧亭到桥面_4",
+      "samples": 533,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "十二米桥面边界_-5.97",
+      "samples": 449,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "十二米桥面边界_5.97",
+      "samples": 449,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    },
+    {
+      "name": "桥东端至观景亭",
+      "samples": 254,
+      "ground_gaps": [],
+      "headroom_obstructions": [],
+      "maximum_sample_step": 0.0,
+      "minimum_floor_z": 12.0,
+      "maximum_floor_z": 12.0
+    }
+  ],
+  "supports": [
+    {
+      "name": "前庭承台",
+      "samples": 1302,
+      "unsupported": []
+    },
+    {
+      "name": "一级台基",
+      "samples": 713,
+      "unsupported": []
+    },
+    {
+      "name": "观景平台",
+      "samples": 240,
+      "unsupported": []
+    },
+    {
+      "name": "桥西台",
+      "samples": 42,
+      "unsupported": []
+    },
+    {
+      "name": "桥东台",
+      "samples": 42,
+      "unsupported": []
+    },
+    {
+      "name": "登山下段",
+      "samples": 198,
+      "unsupported": []
+    },
+    {
+      "name": "登山休息平台",
+      "samples": 99,
+      "unsupported": []
+    },
+    {
+      "name": "登山上段",
+      "samples": 198,
+      "unsupported": []
+    }
+  ],
+  "support_sample_count": 2834,
+  "support_failures": [],
+  "bridge_gap_samples": 462,
+  "bridge_gap_failures": [],
+  "root_failures": [],
+  "pine_architecture_intersections": [],
+  "cameras_inside_rock": [],
+  "freefall_samples": 5832,
+  "water_rock_intrusions": [],
+  "topology_errors": [],
+  "environment_unique_meshes": 391,
+  "environment_unique_vertices": 97367,
+  "shared_meshes": 7,
+  "passed": true
+}

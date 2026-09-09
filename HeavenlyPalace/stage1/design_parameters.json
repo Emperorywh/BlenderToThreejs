@@ -1,8 +1,8 @@
 {
-  "active_stage": "v05",
-  "active_parameters": "v05/design_parameters_v05.json",
-  "active_rebuild_script": "scripts/build_structure_v05.py",
-  "accepted_baseline": "HeavenlyPalace_Whitebox_v04.blend",
+  "active_stage": "v07",
+  "active_parameters": "v07/design_parameters_v07.json",
+  "active_rebuild_script": "scripts/build_environment_v07.py",
+  "accepted_baseline": "HeavenlyPalace_Architecture_v06.blend",
   "main_moon_plane_y": 243.0,
   "main_moon_floor_z": 36.0,
   "main_moon_diameter": 44.0,

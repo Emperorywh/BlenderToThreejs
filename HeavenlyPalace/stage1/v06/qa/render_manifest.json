@@ -1,0 +1,85 @@
+{
+  "blend": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Architecture_v06.blend",
+    "bytes": 4084175,
+    "sha256": "37536C0F84E7E5BE1BF2A2B5A0989588E330C0E4DB989009F694DB81CE505B63"
+  },
+  "baseline": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Structure_v05.blend",
+    "sha256": "9A591F074691AF45414A6393E89FBBCEB5AAB58F628DC2EC1A87B5AF4870BC9F",
+    "unchanged": true
+  },
+  "geometry_audit_passed": true,
+  "embedded_rebuild_passed": true,
+  "original_cameras_preserved": 4,
+  "previous_detail_cameras_preserved": 2,
+  "added_detail_cameras": 5,
+  "route_samples": 17381,
+  "shared_meshes": 519,
+  "renderer": "Blender 5.2.1 LTS / Cycles CPU / 48 最大采样 / 降噪",
+  "renders": [
+    {
+      "file": "01_oblique.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2711307,
+      "sha256": "194DCC358FDAF81D523FD2AB049D72655672B6FE3B9CBF7778281ADF0FC0270F"
+    },
+    {
+      "file": "02_front.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2615546,
+      "sha256": "139A653D1309E65A01B1ABC45B87225FCC370D0343FC08821C840E82B7C544A5"
+    },
+    {
+      "file": "03_aerial.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2751636,
+      "sha256": "97EDECAEBD36BC92382FE6C84F8784BE31BCB8565C6B4A5959C635D4D082F567"
+    },
+    {
+      "file": "04_interior.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2610014,
+      "sha256": "1305DC2DB97B31AE566371324CE5EFC7AAF390929AC952116D90FCF712B0C008"
+    },
+    {
+      "file": "07_entry_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2805175,
+      "sha256": "D82557B28117AB965325F3C14A706319866B36E32D0D99956E58BE6529B43841"
+    },
+    {
+      "file": "08_corner_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2658539,
+      "sha256": "492BE3F0DA7985568CEB987A9175C57E9FDC254593D63CC3792E7058EDBAA678"
+    },
+    {
+      "file": "09_bridge_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2898119,
+      "sha256": "7C1B46A875122EAD99DDC5EFDE66DF229A2BE0F77E70D24C317B0988C427FB64"
+    },
+    {
+      "file": "10_corridor_under_eave.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2908172,
+      "sha256": "D272B03C4EAF3EA42508D544A7047C50333F77C957A9C0A85FDC750F1855F4D6"
+    },
+    {
+      "file": "11_view_pavilion.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2563392,
+      "sha256": "A5C86DE7EC76712FEDA4DF9F035CBDA89F9FAD943F79C8FFAC92C2293CCAECCE"
+    }
+  ]
+}

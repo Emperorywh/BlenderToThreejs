@@ -1,0 +1,57 @@
+{
+  "version": "v07",
+  "baseline_file": "HeavenlyPalace_Architecture_v06.blend",
+  "baseline_sha256": "37536c0f84e7e5be1bf2a2b5a0989588e330c0e4db989009f694db81ce505b63",
+  "output_file": "HeavenlyPalace_Environment_v07.blend",
+  "random_seed": 7108,
+  "main_bottom_z": -250.0,
+  "rear_peak_max_z": 154.0,
+  "bridge_clear_x": [167.0, 252.0],
+  "bridge_clear_y": [112.0, 260.0],
+  "cloud_height_scale": 0.42,
+  "cloud_height_offset": 38.0,
+  "distant_mountains": [[-730,1240,245,175,-650,-60],[-430,1590,230,170,-870,40],[540,1540,280,185,-850,55],[930,1960,350,225,-1300,-55],[-1140,2190,380,220,-1400,60],[-670,-3250,410,220,620,-100],[780,-3670,470,240,795,90],[-1660,-4140,630,300,840,-110]],
+  "main_outline": [[0,-401],[68,-388],[133,-327],[177,-274],[221,-235],[260,-178],[248,-106],[281,-32],[268,60],[212,109],[170,131],[158,161],[158,201],[174,238],[234,268],[276,339],[251,420],[187,477],[108,501],[25,511],[-63,498],[-153,483],[-225,435],[-281,369],[-275,280],[-254,234],[-270,169],[-290,93],[-277,21],[-271,-61],[-266,-151],[-236,-232],[-186,-266],[-141,-314],[-92,-369],[-31,-398]],
+  "ridge_records": [
+    {"name":"西前断崖","center":[-228,-177],"radius":[53,70],"top":14,"lean":[-11,4],"seed":71},
+    {"name":"东前断崖","center":[229,-149],"radius":[48,63],"top":10,"lean":[13,3],"seed":72},
+    {"name":"西廊外岩脊","center":[-239,22],"radius":[51,76],"top":35,"lean":[-18,8],"seed":73},
+    {"name":"东廊外岩脊","center":[242,43],"radius":[36,59],"top":8,"lean":[12,2],"seed":74},
+    {"name":"西上庭岩脊","center":[-231,215],"radius":[56,60],"top":51,"lean":[-17,10],"seed":75},
+    {"name":"东上庭岩脊","center":[229,320],"radius":[48,66],"top":48,"lean":[23,6],"seed":76},
+    {"name":"西后山前肩","center":[-185,397],"radius":[59,62],"top":97,"lean":[-26,16],"seed":77},
+    {"name":"东后山前肩","center":[202,411],"radius":[57,64],"top":91,"lean":[23,15],"seed":78},
+    {"name":"西后山主脊","center":[-186,471],"radius":[66,72],"top":154,"lean":[-21,10],"seed":79},
+    {"name":"后山左鞍部","center":[-92,478],"radius":[63,58],"top":92,"lean":[-23,9],"seed":80},
+    {"name":"后山中央低鞍","center":[18,490],"radius":[75,60],"top":57,"lean":[22,13],"seed":81},
+    {"name":"东后山次脊","center":[134,478],"radius":[61,68],"top":120,"lean":[18,18],"seed":82},
+    {"name":"西侧远肩","center":[-283,359],"radius":[43,63],"top":105,"lean":[-14,8],"seed":83}
+  ],
+  "pine_records": [
+    {"id":1,"label":"西前迎客松","xy":[-230,-175],"height":40,"spread":25,"angle":2.55,"variant":0},
+    {"id":2,"label":"东前探崖松","xy":[219,-144],"height":35,"spread":24,"angle":-0.50,"variant":1},
+    {"id":3,"label":"西侧横枝松","xy":[-292,125],"height":48,"spread":32,"angle":2.75,"variant":2},
+    {"id":4,"label":"观景亭古松样板","xy":[343,153],"height":39,"spread":27,"angle":-0.48,"variant":0},
+    {"id":5,"label":"西上庭临岩松","xy":[-215,210],"height":33,"spread":23,"angle":2.30,"variant":1},
+    {"id":6,"label":"东后肩疏冠松","xy":[177,387],"height":36,"spread":24,"angle":0.10,"variant":2},
+    {"id":7,"label":"西后肩回望松","xy":[-168,382],"height":35,"spread":25,"angle":2.80,"variant":0},
+    {"id":8,"label":"东侧岩台松","xy":[219,319],"height":35,"spread":24,"angle":0.40,"variant":1}
+  ],
+  "waterfalls": [
+    {"id":1,"label":"西前双叠瀑","x":-230,"source_z":-3,"bottom_z":-1300,"width":11.5,"break_z":-106},
+    {"id":2,"label":"东前主瀑","x":232,"source_z":-8,"bottom_z":-1300,"width":14,"break_z":-128},
+    {"id":3,"label":"观景亭悬瀑","x":318,"source_z":5,"bottom_z":-1300,"width":9.0,"break_z":-100},
+    {"id":4,"label":"西后山细瀑","x":-296,"source_z":62,"bottom_z":-1300,"width":6.5,"break_z":null}
+  ],
+  "render_width": 1800,
+  "render_height": 1350,
+  "render_samples": 48,
+  "render_threads": 16,
+  "detail_cameras": [
+    {"frame":12,"name":"CAM_12_主崖壁_岩层台阶与叠瀑","location":[434,-655,126],"target":[64,-201,-65],"lens":44,"output":"12_main_cliff"},
+    {"frame":13,"name":"CAM_13_古松样板_斜干主枝与根盘","location":[403,67,52],"target":[348,160,33],"lens":43,"output":"13_hero_pine"},
+    {"frame":14,"name":"CAM_14_亭桥峡谷_双端承托与悬瀑","location":[438,-105,82],"target":[248,174,-33],"lens":43,"output":"14_bridge_environment"},
+    {"frame":15,"name":"CAM_15_瀑布出水口_分段落差","location":[343,-473,51],"target":[232,-236,-61],"lens":44,"output":"15_waterfall_detail"},
+    {"frame":16,"name":"CAM_16_桥拱仰视_峡谷贯通","location":[208,118,-85],"target":[208,178,0],"lens":21,"output":"16_bridge_clearance"}
+  ]
+}

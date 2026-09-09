@@ -1,0 +1,84 @@
+{
+  "blend": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Environment_v07.blend",
+    "bytes": 5913319,
+    "sha256": "35F97B548EC813FC7F15DE03837E0A8B483FCD5EAA78C6C292559983586F4EFB"
+  },
+  "baseline": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Architecture_v06.blend",
+    "sha256": "37536C0F84E7E5BE1BF2A2B5A0989588E330C0E4DB989009F694DB81CE505B63",
+    "unchanged": true
+  },
+  "geometry_audit_passed": true,
+  "embedded_rebuild_passed": true,
+  "preserved_objects": 7021,
+  "original_fixed_cameras": 4,
+  "preserved_total_cameras": 11,
+  "added_environment_cameras": 5,
+  "renderer": "Blender 5.2.1 LTS / Cycles CPU / 48 最大采样 / 降噪",
+  "renders": [
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\01_oblique.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2862704,
+      "sha256": "540C6A64C502D359438BFD3D093420BC8652CB833D28047091BCB2421C756298"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\02_front.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2833295,
+      "sha256": "FC1B0B235663F9A85A0ECF1C3CA6B85777A6BBF374A2366B3B8EBB3CFBE448DB"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\03_aerial.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2919176,
+      "sha256": "F378AF6C82BBF4528C4FD20EE3AFFDFC403EAD9B3BF6461BC26296BF7A0856D0"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\04_interior.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2615740,
+      "sha256": "3044F619B1202908296677EA9159F260435972C233358C0971A2B38EDA54CE5D"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\12_main_cliff.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2970861,
+      "sha256": "16FDCC445869E95582A6C13D6118E7992857BF803E74661636044685194FA020"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\13_hero_pine.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2865760,
+      "sha256": "D5F0402D2AAFC9CD42A0BF5D31DF1B8DB0FE7AC7A99B61E2704AD276426FCFEA"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\14_bridge_environment.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2866407,
+      "sha256": "9A0236C1D1742999E7EBCB1CD1B66F03782174B365A418B645E50DA105217872"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\15_waterfall_detail.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2675351,
+      "sha256": "042AF9A09296C96304E9DDB0F4D0348929D73D3870EE1A60A2BE013E23E1829E"
+    },
+    {
+      "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v07\\renders\\16_bridge_clearance.png",
+      "width": 1800,
+      "height": 1350,
+      "bytes": 2522164,
+      "sha256": "7052725F26B67BB356D289ED4EF0D10AC76F3AACD90067B8362FD20E81DE929F"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "baseline_sha256": "37536c0f84e7e5be1bf2a2b5a0989588e330c0e4db989009f694db81ce505b63",
+  "baseline_unchanged": true,
+  "original_objects": 8262,
+  "embedded_rebuilds": [
+    {
+      "pass": 1,
+      "objects": 8262,
+      "changed": [],
+      "added": [],
+      "passed": true
+    },
+    {
+      "pass": 2,
+      "objects": 8262,
+      "changed": [],
+      "added": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
