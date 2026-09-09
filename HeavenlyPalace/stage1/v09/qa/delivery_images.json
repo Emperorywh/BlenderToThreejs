@@ -1,0 +1,51 @@
+[
+  {
+    "file": "v09\\renders\\01_oblique.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2850540,
+    "sha256": "96464e99da4ddcfc9e5d54e3eef57918013c4c2e1017fac75dae1f31ad7a504a"
+  },
+  {
+    "file": "v09\\renders\\02_front.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2953733,
+    "sha256": "1515d979f2d0bc88a5080825cd416900ceefc82606c64b6c3cc2187b2623951d"
+  },
+  {
+    "file": "v09\\renders\\03_aerial.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2864329,
+    "sha256": "77b3e3233b9ce8c75927deb42616b205ac7a814b1055931eb39548f662e5b2df"
+  },
+  {
+    "file": "v09\\renders\\04_interior.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2470341,
+    "sha256": "9014c664d9a7dc3c543f64a9b2e122c8fd175425f20bbc64c4bc3c1a27361f3b"
+  },
+  {
+    "file": "v09\\renders\\05_column_detail.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2242155,
+    "sha256": "a891d2c7b28d742497172b6b692efc681e7306c74bf5c81f23b81558792e5cee"
+  },
+  {
+    "file": "v09\\renders\\06_moon_detail.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2231006,
+    "sha256": "a068a99398cbfef0b6f02a287168988724e9b936e1173806f27b7667c4719bb6"
+  },
+  {
+    "file": "v09\\comparison\\00_v08_1_interior.png",
+    "width": 1800,
+    "height": 1350,
+    "bytes": 2334809,
+    "sha256": "c0ad681149c92f50e180d4fbb1e7fd5b3684fdcc4aa2f622b01eca6f8ac1d71b"
+  }
+]

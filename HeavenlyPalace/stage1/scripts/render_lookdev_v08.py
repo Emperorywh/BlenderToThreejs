@@ -9,6 +9,12 @@ import time
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+# 第九版转入独立的细节渲染流程，沿用当前命令行的帧号与预览参数。
+# 旧版目录与默认行为保持原样，避免新版本交付图覆盖既有成果。
+if Path(bpy.data.filepath).stem.endswith('_v09'):
+    import runpy
+    runpy.run_path(str(ROOT/'scripts'/'render_detail_v09.py'),run_name='__main__')
+    raise SystemExit(0)
 OUT=ROOT/'v08'
 # 根据已打开的工程版本选择交付目录，避免新版图片覆盖第八版成果。
 # 新版继续读取同一条时间线相机绑定，四个主机位共用场景与可见性。

@@ -1,0 +1,9 @@
+00:02.125  blend            | Read blend: "C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\HeavenlyPalace_Lookdev_v08_1.blend"
+C:\yangwenhua\BlenderToThreejs\HeavenlyPalace\stage1\scripts\build_detail_v09.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Info: No new files have been packed
+Info: Saved as "HeavenlyPalace_Detail_v09.blend"
+V09_DETAIL_BUILD_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

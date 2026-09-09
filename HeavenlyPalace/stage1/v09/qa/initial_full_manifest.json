@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v09\\comparison\\00_v08_1_interior.png",
+    "camera": "CAM_04_殿内望云_v08_1",
+    "location": [
+      24.0,
+      365.0,
+      37.650001525878906
+    ],
+    "rotation": [
+      1.6908140182495117,
+      -9.384659449551691e-08,
+      2.9519011974334717
+    ],
+    "lens_mm": 52.0,
+    "shift": [
+      -0.11999999731779099,
+      0.0
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 64,
+    "adaptive_threshold": 0.02500000037252903,
+    "denoising": true,
+    "volume_step_rate": 1.0,
+    "volume_max_steps": 768,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "visibility_sha256": "6dbca567dedd23607875165f63eaa8dae14a7f419e786609436366a848798e13",
+    "seconds": 529.8,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Lookdev_v08_1.blend"
+  },
+  "4": {
+    "file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\v09\\renders\\04_interior.png",
+    "camera": "CAM_04_殿内望云_v08_1",
+    "location": [
+      24.0,
+      365.0,
+      37.650001525878906
+    ],
+    "rotation": [
+      1.6908140182495117,
+      -9.384659449551691e-08,
+      2.9519011974334717
+    ],
+    "lens_mm": 52.0,
+    "shift": [
+      -0.11999999731779099,
+      0.0
+    ],
+    "engine": "CYCLES",
+    "device": "CPU",
+    "resolution": [
+      1800,
+      1350
+    ],
+    "samples": 64,
+    "adaptive_threshold": 0.02500000037252903,
+    "denoising": true,
+    "volume_step_rate": 1.0,
+    "volume_max_steps": 768,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "visibility_sha256": "f300a268de542c65a7b76645f17fb15d546381838b7a07ec3f59aff94c1ba1b3",
+    "seconds": 553.26,
+    "scene_file": "C:\\yangwenhua\\BlenderToThreejs\\HeavenlyPalace\\stage1\\HeavenlyPalace_Detail_v09.blend"
+  }
+}

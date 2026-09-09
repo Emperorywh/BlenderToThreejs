@@ -1,0 +1,51 @@
+{
+  "source_sha256": "0b9206448ece9ed774fe8ac7d7aad0d350a99b07f9332287c9b06b6382921e85",
+  "source_unchanged": true,
+  "protected_object_count": 8541,
+  "unexpected_changes": [],
+  "original_camera_changes": [],
+  "light_changes": [],
+  "collection_visibility_changes": [],
+  "world_unchanged": true,
+  "exposure_unchanged": true,
+  "cloud_materials_unchanged": true,
+  "four_camera_bindings_unchanged": true,
+  "moon_subject_geometry_unchanged": true,
+  "moon_net_diameter_m": 44.0,
+  "moon_ornament_minimum_radius_m": 22.91070812756437,
+  "camera_position": [
+    24.0,
+    365.0,
+    37.650001525878906
+  ],
+  "camera_lens_mm": 52.0,
+  "camera_shift_x": -0.11999999731779099,
+  "eye_height_m": 1.6500015258789062,
+  "people": [
+    {
+      "number": "01",
+      "min_z": 36.0,
+      "max_z": 37.79999923706055,
+      "height": 1.7999992370605469
+    },
+    {
+      "number": "02",
+      "min_z": 36.0,
+      "max_z": 37.79999923706055,
+      "height": 1.7999992370605469
+    },
+    {
+      "number": "03",
+      "min_z": 36.0,
+      "max_z": 37.79999923706055,
+      "height": 1.7999992370605469
+    }
+  ],
+  "unpacked_file_images": [],
+  "source_unique_mesh_vertices": 374661,
+  "v09_unique_mesh_vertices": 749913,
+  "source_unique_polygons": 407972,
+  "v09_unique_polygons": 749870,
+  "new_object_count": 1559,
+  "passed": true
+}
