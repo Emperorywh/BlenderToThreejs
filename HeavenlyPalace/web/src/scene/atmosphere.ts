@@ -1,116 +1,19 @@
-/* 云海沿用场景导出的空间布局，通过共享纹理和实例绘制形成柔和云层。
- * 水流保留原有瀑布几何，只为表面增加沿世界竖直方向下落的细流与泡沫。 */
+/* 云海使用独立的 Blender 体积烘焙和固定空间布局，瀑布继续使用原有实体几何。
+ * 本模块统一效果的时间与释放入口，页面控制方式保持一致。 */
 import * as THREE from 'three'
+import { createCloudSea } from './cloudSea'
+import type { CloudRecord } from './cloudSea'
 
-interface CloudRecord {
-  kind: string
-  position: [number, number, number]
-  dimensions: [number, number, number]
-}
 export interface EnvironmentLayout { effects: CloudRecord[] }
 
-/* 使用确定性的云团笔触生成本地纹理，不依赖远程图片或额外下载。
- * 上部暖白、下部青灰的层次让云海在浅色天空中仍能呈现体积感。 */
-function cloudTexture() {
-  const canvas = document.createElement('canvas')
-  canvas.width = 256; canvas.height = 256
-  const context = canvas.getContext('2d')!
-  let seed = 97
-  const random = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647 }
-  for (let i = 0; i < 48; i++) {
-    const angle = random() * Math.PI * 2, radius = Math.sqrt(random()) * 68
-    const x = 128 + Math.cos(angle) * radius, y = 128 + Math.sin(angle) * radius * .68
-    const size = 30 + random() * 45
-    const gradient = context.createRadialGradient(x, y, size * .12, x, y, size)
-    gradient.addColorStop(0, 'rgba(255,255,255,.36)')
-    gradient.addColorStop(.5, 'rgba(255,255,255,.2)')
-    gradient.addColorStop(1, 'rgba(255,255,255,0)')
-    context.fillStyle = gradient
-    context.fillRect(x - size, y - size, size * 2, size * 2)
-  }
-  const texture = new THREE.CanvasTexture(canvas)
-  texture.colorSpace = THREE.NoColorSpace
-  return texture
-}
-
-export function createAtmosphere(layout: EnvironmentLayout) {
-  const texture = cloudTexture()
+/* 等待云图集与布局完整就绪后再交给主场景，避免背景在模型之后突然出现。
+ * 下载期间退出时沿用场景取消信号，已生成的资源交由云海模块回收。 */
+export async function createAtmosphere(layout: EnvironmentLayout, resourceRoot: string, signal: AbortSignal) {
+  const cloudSea = await createCloudSea(resourceRoot, layout.effects, signal)
   const time = { value: 0 }
-  const material = new THREE.ShaderMaterial({
-    transparent: true, depthWrite: false, side: THREE.DoubleSide,
-    uniforms: { cloudMap: { value: texture }, elapsed: time },
-    vertexShader: `
-      /* 按相机方向计算椭球的投影大小，俯视时仍能看到完整云面。
-       * 每个实例保持原始锚点，风动仅在局部轻微往复。 */
-      attribute float density;
-      uniform float elapsed;
-      varying vec2 cloudUv;
-      varying float cloudDensity;
-      #include <common>
-      #include <logdepthbuf_pars_vertex>
-      void main() {
-        cloudUv = uv;
-        cloudDensity = density;
-        vec3 center = instanceMatrix[3].xyz;
-        vec3 extent = vec3(instanceMatrix[0].x, instanceMatrix[1].y, instanceMatrix[2].z);
-        float phase = center.x * .003 + center.z * .002;
-        center.x += sin(elapsed * .035 + phase) * min(extent.x * .018, 12.0);
-        vec3 right = vec3(viewMatrix[0][0], viewMatrix[1][0], viewMatrix[2][0]);
-        vec3 up = vec3(viewMatrix[0][1], viewMatrix[1][1], viewMatrix[2][1]);
-        vec2 size = vec2(length(right * extent), length(up * extent));
-        vec4 mvPosition = viewMatrix * vec4(center, 1.0);
-        mvPosition.xy += position.xy * size * 1.55;
-        gl_Position = projectionMatrix * mvPosition;
-        #include <logdepthbuf_vertex>
-      }
-    `,
-    fragmentShader: `
-      /* 透明边缘与深度测试保留建筑遮挡关系，避免云层浮在建筑表面。
-       * 云团下侧略带青灰，亮部与天空自然衔接。 */
-      uniform sampler2D cloudMap;
-      varying vec2 cloudUv;
-      varying float cloudDensity;
-      #include <common>
-      #include <logdepthbuf_pars_fragment>
-      void main() {
-        float alpha = texture2D(cloudMap, cloudUv).a * cloudDensity;
-        if (alpha < .008) discard;
-        #include <logdepthbuf_fragment>
-        vec3 color = mix(vec3(.53, .64, .64), vec3(.93, .94, .88), smoothstep(.12, .85, cloudUv.y));
-        gl_FragColor = vec4(color, alpha);
-        #include <tonemapping_fragment>
-        #include <colorspace_fragment>
-      }
-    `,
-  })
-  const geometry = new THREE.PlaneGeometry(1, 1)
-  const density = new THREE.InstancedBufferAttribute(new Float32Array(layout.effects.length), 1)
-  geometry.setAttribute('density', density)
-  const clouds = new THREE.InstancedMesh(geometry, material, layout.effects.length)
-  clouds.frustumCulled = false
-  const matrix = new THREE.Matrix4()
-  const entries = layout.effects.map(effect => ({ ...effect, depth: 0 }))
-  let lastSort = -1
 
-  /* 实例按视线深度排序，自动环游和手动旋转时透明云层仍正确叠加。
-   * 排序按低频更新，动画时间使用前台帧差，切回页面时不会突然跳动。 */
-  function update(elapsed: number, camera: THREE.Camera, force = false) {
-    time.value = elapsed
-    if (!force && elapsed - lastSort < .12 && lastSort >= 0) return
-    lastSort = elapsed
-    const view = camera.matrixWorldInverse.elements
-    for (const item of entries) item.depth = view[2] * item.position[0] + view[6] * item.position[1] + view[10] * item.position[2]
-    entries.sort((a, b) => a.depth - b.depth)
-    entries.forEach((item, index) => {
-      matrix.makeScale(...item.dimensions)
-      matrix.setPosition(...item.position)
-      clouds.setMatrixAt(index, matrix)
-      density.setX(index, item.kind === 'waterfall_mist' ? .45 : item.kind === 'entrance_roof_occluder' ? 1 : .88)
-    })
-    clouds.instanceMatrix.needsUpdate = true
-    density.needsUpdate = true
-  }
-
+  /* 水流沿世界竖直方向下落，与云海的烘焙材质和远山几何独立。
+   * 保留原有细流、泡沫与时间采样，避免环境更新改变瀑布表现。 */
   const water = new THREE.MeshStandardMaterial({ color: '#b5d8d2', roughness: .27, metalness: .08, side: THREE.DoubleSide })
   water.onBeforeCompile = shader => {
     shader.uniforms.flowTime = time
@@ -136,7 +39,14 @@ export function createAtmosphere(layout: EnvironmentLayout) {
   water.customProgramCacheKey = () => 'palace-flow-v1'
 
   return {
-    clouds, water, update,
-    dispose() { clouds.dispose(); geometry.dispose(); material.dispose(); texture.dispose(); water.dispose() },
+    /* 门外环境完整加载后才传递替换状态，加载失败时仍由场景入口统一报错。
+     * 模型可见性由模型加载阶段设置，不在逐帧动画中反复遍历或切换。 */
+    clouds: cloudSea.group, water, replacesLegacyMountains: cloudSea.replacesLegacyMountains,
+    /* 云海和水流共享前台时间，动态开关同时控制两种效果。
+     * 机位操作仍传递强制更新标记，以维持正确的透明排序。 */
+    update(elapsed: number, camera: THREE.Camera, force = false) {
+      time.value = elapsed; cloudSea.update(elapsed, camera, force)
+    },
+    dispose() { cloudSea.dispose(); water.dispose() },
   }
 }

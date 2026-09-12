@@ -52,8 +52,17 @@ pnpm run preview --host 127.0.0.1 --port 4174
 
 - `src/scene/PalaceViewer.tsx`、`PalaceViewer.css`：导航、加载、帮助、设置与响应式布局。
 - `src/scene/createPalaceScene.ts`：场景加载、相机适配、轨道控制、绘制与生命周期。
-- `src/scene/atmosphere.ts`：实例云海、局部云雾与瀑布动态材质。
+- `src/scene/palaceLighting.ts`、`lightingProfile.ts`：统一低角度暖阳、户外环境反射，以及殿内／外景的静态阴影覆盖切换。
+- `src/scene/hallFloor.ts`：把实时柱列与天空倒影融入原石板材质，按粗糙度柔化、按视角增强；仅在殿内近景绘制。
+- `src/scene/atmosphere.ts`：云海异步加载、局部云雾与瀑布动态材质。
+- `src/scene/cloudSea.ts`：Blender 体积云图集、六排门外云浪、三圈破碎山脊、右侧岩壁古松与蓝天天空；新环境就绪后停用旧远山占位对象。
 - `src/scene/views.ts`：四景文案。
 - `vite.config.ts`：开发时读取 `../web-assets-v01/assets/`，构建时复制到 `dist/palace-assets/`。不增加模型导出或资源核验步骤。
 
-云层采用实时实例云片，瀑布使用原几何上的动态表面材质；不会改动 Blender 原件，也不依赖远程图片、字体或 CDN。构建目录和依赖目录均不提交 Git。
+云层采用 Blender Cycles 烘焙的四种云形和两种观察角度，网页按固定世界位置实例绘制。连续云床位于宫殿下方，远处积云峰抬升形成错落云冠，三层三维山脊提供纵深。云层转动时按视线排序，动态开关同时控制流云和瀑布。
+
+云海资源位于 `../web-assets-v01/assets/cloud-sea/`，独立编辑工程为 `../web-assets-v01/HeavenlyPalace_CloudSea_v01.blend`，重建方法见 [云海制作与验收](../web-assets-v01/云海制作与验收.md)。建筑原件不被云海脚本覆盖，仍不依赖远程图片、字体或 CDN。构建目录和依赖目录均不提交 Git。
+
+殿内光照的参数依据、离线核验入口与人工验收要点见 [殿内光照与反射](../web-assets-v01/殿内光照与反射.md)。此轮改动直接作用于网页渲染，不需要重新导出建筑 GLB。按 `4` 切到“殿内望云”，查看暖阳穿过柱列形成的长影，以及地坪随观察角度变化的倒影。
+
+殿内正式机位已采用中轴 28 mm 建筑镜头，镜头上移同时容纳柱列、藻井与石坪，前景人物移至中轴中景。刷新页面后按 `4` 进入；参数与重建入口见 [殿内构图](../web-assets-v01/殿内构图.md)。本轮使用 Blender 离线构图检查和资源核验，网页视觉与交互由用户手动验收。

@@ -2,16 +2,27 @@
 将适配副本按资源类别写成标准 glTF 二进制文件，纹理通过共同相对目录共享。
 实例数据显式写入扩展，禁止以 Blender 网格共享替代真正的 GPU 实例交付。
 """
-import bpy, json, math, struct, hashlib
+import bpy, json, math, struct, hashlib, sys
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
 from mathutils import Matrix, Vector
 
 OUT=Path(__file__).resolve().parents[1]
+# 与主殿重建共用可靠保存入口，避免连续导出时被 Windows 临时占用打断。
+# 文件仍写回原有工程路径，网页资源与相对贴图地址不发生变化。
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from blend_io import save_web_blend
 ASSETS=OUT/'assets'
 SCENE=bpy.context.scene
 C=Matrix(((1,0,0,0),(0,0,1,0),(0,-1,0,0),(0,0,0,1)))
+# 主殿精修可仅导出建筑，其他四类资产保持既有二进制内容。
+# 完整导出仍是默认行为，局部导出必须具有可继承的资源清单。
+KINDS=['architecture','terrain','vegetation','characters','waterfalls']
+ARGS=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
+SELECTED=[ARGS[ARGS.index('--only')+1]] if '--only' in ARGS else KINDS
+assert all(kind in KINDS for kind in SELECTED), '未知的资源类别。'
+PREVIOUS=json.loads((ASSETS/'manifest.json').read_text(encoding='utf-8')) if SELECTED!=KINDS else None
 def flat(m):return [m[r][c] for c in range(4) for r in range(4)]
 def category(ob):
     cols=[c.name for c in ob.users_collection]
@@ -27,7 +38,7 @@ def region(ob):
 
 # 静态小件按空间区域和材质合并，重复网格保留供扩展实例化。
 # 月门、主柱、人物、水帘以及大屋面保留明确名称和独立对象。
-all_meshes=[o for o in SCENE.objects if o.type=='MESH']
+all_meshes=[o for o in SCENE.objects if o.type=='MESH' and category(o) in SELECTED]
 # 月门布尔构件含空的备用材质槽，统一继承第一槽白玉以免导出遗漏墙面。
 # 不改变真实面索引；该修复只为没有指定材质的备用槽提供确定性结果。
 for ob in all_meshes:
@@ -42,7 +53,7 @@ for ob in all_meshes:
     ob.data.calc_loop_triangles()
     if (counts[(category(ob),region(ob),ob.data.name)]<3 and len(ob.data.materials)==1 and
         len(ob.data.loop_triangles)<4000 and category(ob) not in ('characters','waterfalls') and
-        not any(w in ob.name for w in ('月门','巨柱','屋面','贴面筒瓦'))):
+        not ob.name.startswith('H01_') and not any(w in ob.name for w in ('月门','巨柱','屋面','贴面筒瓦'))):
         merge_groups[(category(ob),region(ob),ob.data.materials[0].name)].append(ob)
 merged=[]
 for index,(key,group) in enumerate(merge_groups.items()):
@@ -164,9 +175,42 @@ class GLB:
 manifest={'version':'v01','unit':'meter','coordinate_system':'glTF Y-up; x,z,-y; common origin','origin':[0,0,0],'compression':'none (baseline)',
     'source_blend':'HeavenlyPalace_WebAssets_v01.blend','files':[],'pending_effects':['远景云海','近岛云雾','入口五团遮檐云','瀑布水雾和动画'],
     'camera_file':'cameras.json','environment_file':'environment-layout.json'}
+# 质量版本随资产清单输出，方便核对网页当前加载的模型批次。
+# 文件目录保持兼容，原有加载进度和资源引用无需迁移。
+manifest['quality_revision']=SCENE.get('主体资产质量版本','baseline')
+# 单独记录主殿样板版本，保留原有全场质量版本的含义。
+# 后续刷新网页时可用清单确认实际读取到的建筑批次。
+manifest['main_hall_revision']=SCENE.get('主殿样板版本','baseline')
+# 藻井细化独立记录版本，局部替换天花时无需重置整座主殿的建筑版本。
+# 网页资源清单据此标识实际导出的殿内装饰批次，便于人工界面核对。
+manifest['hall_ceiling_revision']=SCENE.get('殿内藻井版本','baseline')
+# 殿内机位与人物站位共同形成构图版本，便于核对正式网页的资源批次。
+# 建筑版本独立保留，单独更新人物时不会被误记为建筑几何重建。
+manifest['hall_view_revision']=SCENE.get('殿内构图版本','baseline')
+# 独立记录层高、柱网与门洞的空间版本，让网页资产能区分同一材质下的新旧构图。
+# 净径与落地宽度读取当前实体元数据，不从保留兼容用途的历史对象名推断。
+manifest['hall_space_revision']=SCENE.get('殿内空间版本','baseline')
+moon=bpy.data.objects['V05_月门通厚石圈_净径44米']
+manifest['hall_space']=dict(gate_diameter_m=moon.get('净开口直径_米',44.0),
+                           gate_floor_width_m=moon.get('落地净宽_米',18.3303),
+                           parameters=json.loads(SCENE.get('殿内空间参数','{}')))
 used_textures=set()
 used_materials={}
-for kind in ['architecture','terrain','vegetation','characters','waterfalls']:
+for kind in KINDS:
+    # 未修改类别继承原文件及元数据，并收录其真正使用的共享贴图。
+    # 读取 GLB 的 JSON 头即可获得引用，不需要解压或改写其他模型。
+    if kind not in SELECTED:
+        record=next(row for row in PREVIOUS['files'] if row['file']==kind+'.glb')
+        payload=(ASSETS/record['file']).read_bytes()
+        assert hashlib.sha256(payload).hexdigest()==record['sha256'], '待继承资产摘要不符：'+kind
+        length=struct.unpack_from('<I',payload,12)[0]
+        document=json.loads(payload[20:20+length])
+        manifest['files'].append(record)
+        used_textures.update(row['uri'] for row in document.get('images',[]) if 'uri' in row)
+        for row in document.get('materials',[]):
+            name=row['name']
+            used_materials[name]=json.loads(bpy.data.materials[name]['web_spec'])
+        continue
     exporter=GLB();groups=defaultdict(list)
     for ob in SCENE.objects:
         if ob.type=='MESH' and category(ob)==kind:groups[(ob.data.name,region(ob),tuple(m.name for m in ob.data.materials))].append(ob)
@@ -188,6 +232,5 @@ manifest['material_file']='materials.json'
 (ASSETS/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 (OUT/'qa'/'merge-report.json').write_text(json.dumps(merged,ensure_ascii=False,indent=2),encoding='utf-8')
 SCENE['WEB_静态合并']='按区域与材质合并；实例数据由可重复导出脚本显式写入EXT_mesh_gpu_instancing'
-bpy.context.preferences.filepaths.save_version=0
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'HeavenlyPalace_WebAssets_v01.blend'),compress=True)
+save_web_blend(OUT/'HeavenlyPalace_WebAssets_v01.blend')
 print('EXPORT_COMPLETE',flush=True)
